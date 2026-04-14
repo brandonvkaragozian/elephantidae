@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Settlements",
+        "place": "village",
+        "name": "Walayar Village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.74,
+          10.84
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Settlements",
+        "place": "village",
+        "name": "Chittur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.68,
+          10.77
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "Settlements",
+        "place": "village",
+        "name": "Nemmara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.8,
+          10.88
+        ]
+      }
+    }
+  ]
+}
