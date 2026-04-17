@@ -28,8 +28,8 @@ import numpy as np
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 GEN_DIR = os.path.join(SCRIPT_DIR, "generate_elephant_trajectories")
 
-KML_MAP = os.path.join(GEN_DIR, "FINAL WALAYAR MAP.kml")
-TRAJECTORIES_KML = os.path.join(GEN_DIR, "generated_walayar_trajectories.kml")
+KML_MAP = os.path.join(SCRIPT_DIR, "FINAL WALAYAR MAP.kml")
+TRAJECTORIES_KML = os.path.join(SCRIPT_DIR, "walayar_wgan_trajectories.kml")
 OSM_FEATURES = os.path.join(SCRIPT_DIR, "osm_features.json")
 OSM_ROADS = os.path.join(SCRIPT_DIR, "osm_roads.json")
 
@@ -79,6 +79,72 @@ def polygon_area(polygon: List[Tuple[float, float]]) -> float:
         x2, y2 = polygon_m[(i + 1) % n]
         area += x1 * y2 - x2 * y1
     return abs(area) / 2.0
+
+def polygon_intersection_area(cell_polygon: List[Tuple[float, float]], feature_polygon: List[Tuple[float, float]]) -> float:
+    """
+    Estimate intersection area between two polygons using improved ray casting.
+    Returns area in square meters, capped at cell area.
+    """
+    if len(cell_polygon) < 3 or len(feature_polygon) < 3:
+        return 0.0
+    
+    # Get bounding boxes in lat/lon
+    cell_lats = [p[0] for p in cell_polygon]
+    cell_lons = [p[1] for p in cell_polygon]
+    feature_lats = [p[0] for p in feature_polygon]
+    feature_lons = [p[1] for p in feature_polygon]
+    
+    min_lat = max(min(cell_lats), min(feature_lats))
+    max_lat = min(max(cell_lats), max(feature_lats))
+    min_lon = max(min(cell_lons), min(feature_lons))
+    max_lon = min(max(cell_lons), max(feature_lons))
+    
+    # If bounding boxes don't overlap, no intersection
+    if min_lat >= max_lat or min_lon >= max_lon:
+        return 0.0
+    
+    # Finer grid sampling for better accuracy
+    sample_count = 20  # 20x20 grid for better precision
+    lat_step = (max_lat - min_lat) / sample_count
+    lon_step = (max_lon - min_lon) / sample_count
+    
+    if lat_step <= 0 or lon_step <= 0:
+        return 0.0
+    
+    points_in_both = 0
+    total_points = 0
+    
+    for i in range(sample_count):
+        for j in range(sample_count):
+            lat = min_lat + (i + 0.5) * lat_step
+            lon = min_lon + (j + 0.5) * lon_step
+            total_points += 1
+            
+            # Check if point is in both polygons
+            if point_in_polygon((lat, lon), cell_polygon) and point_in_polygon((lat, lon), feature_polygon):
+                points_in_both += 1
+    
+    if total_points == 0:
+        return 0.0
+    
+    # Estimate intersection area using sampling ratio
+    # More accurate lat/lon to meters conversion
+    lat_center = (min_lat + max_lat) / 2
+    cos_lat = math.cos(math.radians(lat_center))
+    
+    # Area in square degrees
+    bbox_area_degrees = (max_lat - min_lat) * (max_lon - min_lon)
+    
+    # Convert to square meters
+    lat_m_local = LAT_M
+    lon_m_local = LON_M * cos_lat
+    bbox_area_m2 = bbox_area_degrees * lat_m_local * lon_m_local
+    
+    intersection_area_m2 = (points_in_both / total_points) * bbox_area_m2
+    
+    # Cap at cell area to handle overlapping features
+    cell_area_m2 = polygon_area(cell_polygon)
+    return min(intersection_area_m2, cell_area_m2)
 
 def line_length(line: List[Tuple[float, float]]) -> float:
     """Compute total length of a line in meters."""
@@ -225,18 +291,46 @@ def extract_trajectories(kml_path: str) -> List[List[Tuple[float, float]]]:
 # ---------------------------------------------------------------------------
 
 def load_osm_features() -> Dict:
-    """Load OSM features (polygons for land cover types)."""
-    if os.path.exists(OSM_FEATURES):
-        with open(OSM_FEATURES) as f:
-            return json.load(f)
-    return {'crops': [], 'settlements': [], 'water': [], 'forest': []}
+    """Load features extracted from KML."""
+    features = {'crops': [], 'settlements': [], 'water': [], 'forest': []}
+    
+    # Load water bodies
+    if os.path.exists(os.path.join(SCRIPT_DIR, 'kml_water_bodies.json')):
+        with open(os.path.join(SCRIPT_DIR, 'kml_water_bodies.json')) as f:
+            features['water'] = json.load(f)
+    
+    # Load crops
+    if os.path.exists(os.path.join(SCRIPT_DIR, 'kml_crops.json')):
+        with open(os.path.join(SCRIPT_DIR, 'kml_crops.json')) as f:
+            features['crops'] = json.load(f)
+    
+    # Load settlements
+    if os.path.exists(os.path.join(SCRIPT_DIR, 'kml_settlements.json')):
+        with open(os.path.join(SCRIPT_DIR, 'kml_settlements.json')) as f:
+            features['settlements'] = json.load(f)
+    
+    # Load forest sections
+    if os.path.exists(os.path.join(SCRIPT_DIR, 'kml_forest.json')):
+        with open(os.path.join(SCRIPT_DIR, 'kml_forest.json')) as f:
+            features['forest'] = json.load(f)
+    
+    return features
 
 def load_osm_roads() -> Dict:
-    """Load OSM roads (LineStrings for roads/railways)."""
-    if os.path.exists(OSM_ROADS):
-        with open(OSM_ROADS) as f:
-            return json.load(f)
-    return {'roads': [], 'railways': []}
+    """Load roads and railways extracted from KML."""
+    roads = {'roads': [], 'railways': []}
+    
+    # Load roads
+    if os.path.exists(os.path.join(SCRIPT_DIR, 'kml_roads.json')):
+        with open(os.path.join(SCRIPT_DIR, 'kml_roads.json')) as f:
+            roads['roads'] = json.load(f)
+    
+    # Load railways
+    if os.path.exists(os.path.join(SCRIPT_DIR, 'kml_railways.json')):
+        with open(os.path.join(SCRIPT_DIR, 'kml_railways.json')) as f:
+            roads['railways'] = json.load(f)
+    
+    return roads
 
 def compute_land_cover_features(cell: Dict, osm_features: Dict, osm_roads: Dict) -> Dict:
     """Compute land-cover features for a grid cell."""
@@ -254,7 +348,7 @@ def compute_land_cover_features(cell: Dict, osm_features: Dict, osm_roads: Dict)
         'area_m2': cell_area,
     }
     
-    # Compute land-cover percentages
+    # Compute land-cover percentages using intersection areas
     crop_area = 0.0
     settlement_area = 0.0
     water_area = 0.0
@@ -263,40 +357,32 @@ def compute_land_cover_features(cell: Dict, osm_features: Dict, osm_roads: Dict)
     for crop_poly in osm_features.get('crops', []):
         if isinstance(crop_poly, dict):
             crop_poly = crop_poly.get('coordinates', [])
-        # Approximate: check if any vertex is in cell
-        for point in crop_poly:
-            if point_in_polygon(point, polygon):
-                crop_area += polygon_area(crop_poly) if len(crop_poly) > 2 else 0
-                break
+        # Compute intersection area
+        intersection = polygon_intersection_area(polygon, crop_poly)
+        crop_area += intersection
     
     for settle_poly in osm_features.get('settlements', []):
         if isinstance(settle_poly, dict):
             settle_poly = settle_poly.get('coordinates', [])
-        for point in settle_poly:
-            if point_in_polygon(point, polygon):
-                settlement_area += polygon_area(settle_poly) if len(settle_poly) > 2 else 0
-                break
+        intersection = polygon_intersection_area(polygon, settle_poly)
+        settlement_area += intersection
     
     for water_poly in osm_features.get('water', []):
         if isinstance(water_poly, dict):
             water_poly = water_poly.get('coordinates', [])
-        for point in water_poly:
-            if point_in_polygon(point, polygon):
-                water_area += polygon_area(water_poly) if len(water_poly) > 2 else 0
-                break
+        intersection = polygon_intersection_area(polygon, water_poly)
+        water_area += intersection
     
     for forest_poly in osm_features.get('forest', []):
         if isinstance(forest_poly, dict):
             forest_poly = forest_poly.get('coordinates', [])
-        for point in forest_poly:
-            if point_in_polygon(point, polygon):
-                forest_area += polygon_area(forest_poly) if len(forest_poly) > 2 else 0
-                break
+        intersection = polygon_intersection_area(polygon, forest_poly)
+        forest_area += intersection
     
-    features['pct_crops'] = (crop_area / cell_area * 100) if cell_area > 0 else 0
-    features['pct_settlements'] = (settlement_area / cell_area * 100) if cell_area > 0 else 0
-    features['pct_water'] = (water_area / cell_area * 100) if cell_area > 0 else 0
-    features['pct_forest'] = (forest_area / cell_area * 100) if cell_area > 0 else 0
+    features['pct_crops'] = min((crop_area / cell_area * 100) if cell_area > 0 else 0, 100.0)
+    features['pct_settlements'] = min((settlement_area / cell_area * 100) if cell_area > 0 else 0, 100.0)
+    features['pct_water'] = min((water_area / cell_area * 100) if cell_area > 0 else 0, 100.0)
+    features['pct_forest'] = min((forest_area / cell_area * 100) if cell_area > 0 else 0, 100.0)
     
     # Compute road/railway lengths
     total_road_length = 0.0
@@ -400,7 +486,7 @@ def main():
     print(f"Found {len(trajectories)} trajectories")
     
     # Load OSM data
-    print("Loading OSM features...")
+    print("Loading features from KML...")
     osm_features = load_osm_features()
     osm_roads = load_osm_roads()
     

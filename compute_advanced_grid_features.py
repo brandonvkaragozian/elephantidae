@@ -25,8 +25,8 @@ import numpy as np
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 GEN_DIR = os.path.join(SCRIPT_DIR, "generate_elephant_trajectories")
 
-KML_MAP = os.path.join(GEN_DIR, "FINAL WALAYAR MAP.kml")
-TRAJECTORIES_KML = os.path.join(GEN_DIR, "generated_walayar_trajectories.kml")
+KML_MAP = os.path.join(SCRIPT_DIR, "FINAL WALAYAR MAP.kml")
+TRAJECTORIES_KML = os.path.join(SCRIPT_DIR, "walayar_wgan_trajectories.kml")
 OSM_FEATURES = os.path.join(SCRIPT_DIR, "osm_features.json")
 OSM_ROADS = os.path.join(SCRIPT_DIR, "osm_roads.json")
 
@@ -139,11 +139,30 @@ def extract_grid_cells(placemarks: List[Dict]) -> List[Dict]:
     return grid_cells
 
 def load_osm_features() -> Dict:
-    """Load OSM features."""
-    if os.path.exists(OSM_FEATURES):
-        with open(OSM_FEATURES) as f:
-            return json.load(f)
-    return {'crops': [], 'settlements': [], 'water': [], 'forest': []}
+    """Load features extracted from KML."""
+    features = {'crops': [], 'settlements': [], 'water': [], 'forest': []}
+    
+    # Load water bodies
+    if os.path.exists(os.path.join(SCRIPT_DIR, 'kml_water_bodies.json')):
+        with open(os.path.join(SCRIPT_DIR, 'kml_water_bodies.json')) as f:
+            features['water'] = json.load(f)
+    
+    # Load crops
+    if os.path.exists(os.path.join(SCRIPT_DIR, 'kml_crops.json')):
+        with open(os.path.join(SCRIPT_DIR, 'kml_crops.json')) as f:
+            features['crops'] = json.load(f)
+    
+    # Load settlements
+    if os.path.exists(os.path.join(SCRIPT_DIR, 'kml_settlements.json')):
+        with open(os.path.join(SCRIPT_DIR, 'kml_settlements.json')) as f:
+            features['settlements'] = json.load(f)
+    
+    # Load forest sections
+    if os.path.exists(os.path.join(SCRIPT_DIR, 'kml_forest.json')):
+        with open(os.path.join(SCRIPT_DIR, 'kml_forest.json')) as f:
+            features['forest'] = json.load(f)
+    
+    return features
 
 def extract_trajectories(kml_path: str) -> List[List[Tuple[float, float]]]:
     """Extract trajectories from KML."""
