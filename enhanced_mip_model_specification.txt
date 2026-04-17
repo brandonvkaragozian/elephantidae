@@ -1,0 +1,50 @@
+ENHANCED MIXED INTEGER PROGRAM FOR CAMERA PLACEMENT
+================================================================================
+
+PROBLEM FORMULATION
+--------------------------------------------------------------------------------
+
+Decision Variables:
+  x[j] ∈ {0,1}         : Binary indicator for camera at location j
+  y[i] ∈ [0,1]         : Demand coverage of cell i
+  z[i] ∈ [0,1]         : Geographic coverage of cell i
+
+Objective Function:
+  maximize: 0.6 * Σ_i (demand[i] * y[i]) +
+            0.3 * Σ_i z[i] +
+            0.1 * Σ_j (camera_value[j] * x[j])
+
+Constraints:
+  1. Budget (HARD): Σ_j x[j] = 16 (exactly 16 cameras)
+  2. Demand: y[i] ≤ Σ_j detectability[i,j] * x[j]  ∀i
+  3. Geographic: z[i] ≤ Σ_j detectability[i,j] * x[j]  ∀i
+
+COMPONENT DEFINITIONS
+--------------------------------------------------------------------------------
+
+Demand (Cell Importance):
+  Formula: 0.5*visits + 0.3*trajectories + 0.2*entries
+           then boosted by 0.2*point_density
+  Range: [0, 1] normalized
+  Mean: 0.093
+  High-demand (>0.5): 53 cells
+
+Detectability (Camera→Cell Visibility):
+  Formula: 1 - occlusion_factor (line-of-sight interpolation)
+  Binary: >0.3 threshold
+  Mean (binary): 243.3 cells per camera
+
+Camera Value (Placement Priority):
+  Formula: 0.7*demand + 0.3*diversity_bonus
+  Diversity: Distance to 50 nearest cells (encourages spread)
+  Purpose: Balance targeting activity + spatial redundancy
+
+SOLVER & STATUS
+--------------------------------------------------------------------------------
+Algorithm: Branch-and-cut (CBC solver)
+Time limit: 300 seconds
+Status: Optimal
+Objective value: 382.432
+Cameras selected: 16
+Geographic coverage: 100.0%
+Demand coverage: 100.0%
