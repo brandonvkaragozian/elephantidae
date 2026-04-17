@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" version="2.2">
+  <Document>
+    <name>Walayar Wildlife Sanctuary - 16 Camera Placements</name>
+    <description>Optimal camera placement for elephant monitoring. Generated via MIP optimization.</description>
+    <open>1</open>
+    <Style id="Tier1">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/camera.png</href>
+        </Icon>
+        <scale>1.2</scale>
+        <color>ff0000ff</color>
+      </IconStyle>
+      <LabelStyle>
+        <color>ff0000ff</color>
+        <scale>1.0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="Tier2">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/camera.png</href>
+        </Icon>
+        <scale>1.0</scale>
+        <color>ff00ff00</color>
+      </IconStyle>
+      <LabelStyle>
+        <color>ff00ff00</color>
+        <scale>0.9</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="Tier3">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/camera.png</href>
+        </Icon>
+        <scale>0.9</scale>
+        <color>ffff0000</color>
+      </IconStyle>
+      <LabelStyle>
+        <color>ffff0000</color>
+        <scale>0.8</scale>
+      </LabelStyle>
+    </Style>
+    <Folder>
+      <name>Tier 1: High-Coverage Anchors (Northern Boundary)</name>
+      <description>4 cameras providing complete geographic coverage</description>
+      <open>1</open>
+      <Placemark>
+        <name>Camera 1: R000C000 (ANCHOR)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 1 of 16
+Cell ID: R000C000
+Tier: ANCHOR
+Coordinates: 10.751572°N, 76.625259°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 1071
+Demand Coverage: 99.62
+Elephant Visits in Range: 1472
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): True
+Phase 2 (Recommended): False
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier1</styleUrl>
+        <Point>
+          <coordinates>76.62525892000001,10.75157164,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>1</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R000C000</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>1071</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>99.62</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>1472</value>
+          </Data>
+          <Data name="Tier">
+            <value>ANCHOR</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 2: R000C001 (ANCHOR)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 2 of 16
+Cell ID: R000C001
+Tier: ANCHOR
+Coordinates: 10.751572°N, 76.629832°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 1063
+Demand Coverage: 99.62
+Elephant Visits in Range: 1472
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): True
+Phase 2 (Recommended): False
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier1</styleUrl>
+        <Point>
+          <coordinates>76.62983212,10.75157164,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>2</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R000C001</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>1063</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>99.62</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>1472</value>
+          </Data>
+          <Data name="Tier">
+            <value>ANCHOR</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 3: R000C003 (ANCHOR)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 3 of 16
+Cell ID: R000C003
+Tier: ANCHOR
+Coordinates: 10.751572°N, 76.638978°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 1038
+Demand Coverage: 99.62
+Elephant Visits in Range: 1472
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): True
+Phase 2 (Recommended): False
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier1</styleUrl>
+        <Point>
+          <coordinates>76.63897842,10.75157164,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>3</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R000C003</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>1038</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>99.62</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>1472</value>
+          </Data>
+          <Data name="Tier">
+            <value>ANCHOR</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 4: R000C007 (ANCHOR)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 4 of 16
+Cell ID: R000C007
+Tier: ANCHOR
+Coordinates: 10.751572°N, 76.657271°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 1009
+Demand Coverage: 99.43
+Elephant Visits in Range: 1471
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): True
+Phase 2 (Recommended): False
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier1</styleUrl>
+        <Point>
+          <coordinates>76.65727106,10.75157164,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>4</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R000C007</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>1009</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>99.43</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>1471</value>
+          </Data>
+          <Data name="Tier">
+            <value>ANCHOR</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Tier 2: Perimeter Reinforcement (Eastern Boundary)</name>
+      <description>9 cameras providing redundancy and coverage depth</description>
+      <open>1</open>
+      <Placemark>
+        <name>Camera 5: R000C042 (REINFORCEMENT)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 5 of 16
+Cell ID: R000C042
+Tier: REINFORCEMENT
+Coordinates: 10.751572°N, 76.817332°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 563
+Demand Coverage: 63.15
+Elephant Visits in Range: 929
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): False
+Phase 2 (Recommended): True
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier2</styleUrl>
+        <Point>
+          <coordinates>76.81733166000001,10.75157164,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>5</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R000C042</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>563</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>63.15</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>929</value>
+          </Data>
+          <Data name="Tier">
+            <value>REINFORCEMENT</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 6: R000C046 (REINFORCEMENT)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 6 of 16
+Cell ID: R000C046
+Tier: REINFORCEMENT
+Coordinates: 10.751572°N, 76.835624°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 825
+Demand Coverage: 94.88
+Elephant Visits in Range: 1409
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): False
+Phase 2 (Recommended): True
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier2</styleUrl>
+        <Point>
+          <coordinates>76.83562432,10.75157164,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>6</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R000C046</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>825</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>94.88</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>1409</value>
+          </Data>
+          <Data name="Tier">
+            <value>REINFORCEMENT</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 7: R000C047 (REINFORCEMENT)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 7 of 16
+Cell ID: R000C047
+Tier: REINFORCEMENT
+Coordinates: 10.751572°N, 76.840197°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 868
+Demand Coverage: 98.44
+Elephant Visits in Range: 1455
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): False
+Phase 2 (Recommended): True
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier2</styleUrl>
+        <Point>
+          <coordinates>76.84019746,10.75157164,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>7</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R000C047</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>868</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>98.44</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>1455</value>
+          </Data>
+          <Data name="Tier">
+            <value>REINFORCEMENT</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 8: R000C048 (REINFORCEMENT)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 8 of 16
+Cell ID: R000C048
+Tier: REINFORCEMENT
+Coordinates: 10.751572°N, 76.844771°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 900
+Demand Coverage: 99.00
+Elephant Visits in Range: 1463
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): False
+Phase 2 (Recommended): True
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier2</styleUrl>
+        <Point>
+          <coordinates>76.84477062,10.75157164,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>8</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R000C048</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>900</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>99.00</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>1463</value>
+          </Data>
+          <Data name="Tier">
+            <value>REINFORCEMENT</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 9: R001C002 (REINFORCEMENT)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 9 of 16
+Cell ID: R001C002
+Tier: REINFORCEMENT
+Coordinates: 10.756063°N, 76.634405°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 992
+Demand Coverage: 99.62
+Elephant Visits in Range: 1472
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): False
+Phase 2 (Recommended): True
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier2</styleUrl>
+        <Point>
+          <coordinates>76.63440526,10.7560632,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>9</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R001C002</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>992</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>99.62</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>1472</value>
+          </Data>
+          <Data name="Tier">
+            <value>REINFORCEMENT</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 10: R001C007 (REINFORCEMENT)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 10 of 16
+Cell ID: R001C007
+Tier: REINFORCEMENT
+Coordinates: 10.756063°N, 76.657271°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 893
+Demand Coverage: 97.47
+Elephant Visits in Range: 1449
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): False
+Phase 2 (Recommended): True
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier2</styleUrl>
+        <Point>
+          <coordinates>76.65727106,10.7560632,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>10</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R001C007</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>893</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>97.47</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>1449</value>
+          </Data>
+          <Data name="Tier">
+            <value>REINFORCEMENT</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 11: R001C008 (REINFORCEMENT)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 11 of 16
+Cell ID: R001C008
+Tier: REINFORCEMENT
+Coordinates: 10.756063°N, 76.661844°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 852
+Demand Coverage: 93.29
+Elephant Visits in Range: 1384
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): False
+Phase 2 (Recommended): True
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier2</styleUrl>
+        <Point>
+          <coordinates>76.66184422,10.7560632,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>11</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R001C008</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>852</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>93.29</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>1384</value>
+          </Data>
+          <Data name="Tier">
+            <value>REINFORCEMENT</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 12: R001C009 (REINFORCEMENT)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 12 of 16
+Cell ID: R001C009
+Tier: REINFORCEMENT
+Coordinates: 10.756063°N, 76.666417°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 804
+Demand Coverage: 89.56
+Elephant Visits in Range: 1338
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): False
+Phase 2 (Recommended): True
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier2</styleUrl>
+        <Point>
+          <coordinates>76.66641741999999,10.7560632,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>12</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R001C009</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>804</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>89.56</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>1338</value>
+          </Data>
+          <Data name="Tier">
+            <value>REINFORCEMENT</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 13: R002C003 (REINFORCEMENT)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 13 of 16
+Cell ID: R002C003
+Tier: REINFORCEMENT
+Coordinates: 10.760555°N, 76.638978°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 887
+Demand Coverage: 96.96
+Elephant Visits in Range: 1439
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): False
+Phase 2 (Recommended): True
+Phase 3 (Optional): False
+</description>
+        <styleUrl>#Tier2</styleUrl>
+        <Point>
+          <coordinates>76.63897842,10.76055474,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>13</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R002C003</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>887</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>96.96</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>1439</value>
+          </Data>
+          <Data name="Tier">
+            <value>REINFORCEMENT</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Tier 3: Activity Hotspot Monitors</name>
+      <description>3 cameras for intensive elephant behavior monitoring</description>
+      <open>1</open>
+      <Placemark>
+        <name>Camera 14: R012C022 (HOTSPOT)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 14 of 16
+Cell ID: R012C022
+Tier: HOTSPOT
+Coordinates: 10.805470°N, 76.725868°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 91
+Demand Coverage: 29.83
+Elephant Visits in Range: 474
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): False
+Phase 2 (Recommended): False
+Phase 3 (Optional): True
+</description>
+        <styleUrl>#Tier3</styleUrl>
+        <Point>
+          <coordinates>76.72586845999999,10.80547034,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>14</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R012C022</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>91</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>29.83</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>474</value>
+          </Data>
+          <Data name="Tier">
+            <value>HOTSPOT</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 15: R012C023 (HOTSPOT)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 15 of 16
+Cell ID: R012C023
+Tier: HOTSPOT
+Coordinates: 10.805470°N, 76.730442°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 87
+Demand Coverage: 27.06
+Elephant Visits in Range: 427
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): False
+Phase 2 (Recommended): False
+Phase 3 (Optional): True
+</description>
+        <styleUrl>#Tier3</styleUrl>
+        <Point>
+          <coordinates>76.73044162,10.80547034,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>15</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R012C023</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>87</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>27.06</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>427</value>
+          </Data>
+          <Data name="Tier">
+            <value>HOTSPOT</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camera 16: R012C026 (HOTSPOT)</name>
+        <description>
+Camera Placement Details:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Rank: 16 of 16
+Cell ID: R012C026
+Tier: HOTSPOT
+Coordinates: 10.805470°N, 76.744161°E
+
+Coverage Metrics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cells Visible: 95
+Demand Coverage: 29.30
+Elephant Visits in Range: 452
+Coverage Radius: 40 km (360° view)
+
+Deployment Priority:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Phase 1 (Critical): False
+Phase 2 (Recommended): False
+Phase 3 (Optional): True
+</description>
+        <styleUrl>#Tier3</styleUrl>
+        <Point>
+          <coordinates>76.74416112,10.80547034,0</coordinates>
+        </Point>
+        <ExtendedData>
+          <Data name="Rank">
+            <value>16</value>
+          </Data>
+          <Data name="Cell_ID">
+            <value>R012C026</value>
+          </Data>
+          <Data name="Visible_Cells">
+            <value>95</value>
+          </Data>
+          <Data name="Demand_Coverage">
+            <value>29.30</value>
+          </Data>
+          <Data name="Elephant_Visits">
+            <value>452</value>
+          </Data>
+          <Data name="Tier">
+            <value>HOTSPOT</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
