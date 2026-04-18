@@ -1,22 +1,23 @@
 #!/usr/bin/env python3
 """
-Enhanced MIP for Camera Placement with Multiple Objectives
+Enhanced MIP for Camera Placement with Realistic Camera Specs
 
-Objectives balanced:
-1. Maximize demand coverage (primary: elephant activity)
-2. Maximize geographic coverage (secondary: complete surveillance)
-3. Encourage spatial diversity (tertiary: redundancy & resilience)
+Updated constraints:
+- Detection radius: 1km diameter (500m radius) around camera
+- Range constraint: Can place cameras 20km apart
+- Occlusion: Terrain blocks visibility within detection zone
+- No 360° pan/tilt: Fixed cameras
 """
 
 import pandas as pd
 import numpy as np
-from scipy.spatial.distance import pdist, squareform
 import pulp
 import warnings
 warnings.filterwarnings('ignore')
 
 print("\n" + "="*80)
-print("ENHANCED MIP FOR CAMERA PLACEMENT (K=16 CAMERAS)")
+print("MIXED INTEGER OPTIMIZATION - CAMERA PLACEMENT")
+print("Camera Specs: 20km range, 1km detection zone, terrain occlusion")
 print("="*80)
 
 # ============================================================================
@@ -46,15 +47,15 @@ demand = 0.8 * demand + 0.2 * points_norm
 demand = (demand - demand.min()) / (demand.max() - demand.min())
 
 print(f"  ✓ Demand computed: mean={demand.mean():.3f}, max={demand.max():.3f}")
-print(f"  High-demand cells (>0.5): {(demand > 0.5).sum()}")
 
 # ============================================================================
-# 2. COMPUTE DETECTABILITY MATRIX
+# 2. COMPUTE DETECTABILITY WITH 1KM RADIUS
 # ============================================================================
-print("\n[2/5] Computing detectability matrix...")
+print("\n[2/5] Computing detectability within 1km detection zone...")
 
 EARTH_RADIUS_KM = 6371
-MAX_RANGE_KM = 20
+CAMERA_RANGE_KM = 20
+DETECTION_RADIUS_KM = 1.0  # 1km diameter = 0.5km radius
 
 def haversine(lat1, lon1, lat2, lon2):
     lat1_rad, lon1_rad = np.radians(lat1), np.radians(lon1)
@@ -66,7 +67,8 @@ def haversine(lat1, lon1, lat2, lon2):
     return EARTH_RADIUS_KM * c
 
 def occlusion_factor(source_idx, target_idx):
-    n_samples = 10
+    """Estimate occlusion between two cells"""
+    n_samples = 5
     lats = np.linspace(coords[source_idx, 0], coords[target_idx, 0], n_samples)
     lons = np.linspace(coords[source_idx, 1], coords[target_idx, 1], n_samples)
     
@@ -95,64 +97,69 @@ for i in range(n_cells):
         distances_km[i, j] = dist
         distances_km[j, i] = dist
 
-# Compute detectability
+# Compute detectability: camera at j can detect cell i if:
+# 1. Distance from j to i <= 1km (detection radius)
+# 2. Line-of-sight not completely blocked by occlusion
+print("  Computing occlusion factors within 1km detection zones...")
 detectability = np.zeros((n_cells, n_cells))
-print("  Computing occlusion factors...")
-for i in range(n_cells):
-    for j in range(n_cells):
+
+for j in range(n_cells):  # Camera location
+    nearby_cells = []
+    for i in range(n_cells):  # Target cell
         if i == j:
-            detectability[i, j] = 1.0
-        elif distances_km[i, j] <= MAX_RANGE_KM:
+            detectability[i, j] = 1.0  # Camera detects its own cell
+            nearby_cells.append(i)
+        elif distances_km[i, j] <= DETECTION_RADIUS_KM:
+            # Within 1km detection zone
             occlusion = occlusion_factor(j, i)
             detectability[i, j] = max(0.0, 1.0 - occlusion)
+            nearby_cells.append(i)
         else:
             detectability[i, j] = 0.0
     
-    if (i + 1) % 200 == 0:
-        print(f"    {i+1}/{n_cells}")
+    if (j + 1) % 200 == 0:
+        print(f"    {j+1}/{n_cells} cameras processed, avg {len(nearby_cells):.1f} cells/camera")
 
 detectability_binary = (detectability > 0.3).astype(int)
 
-print(f"  ✓ Detectability computed: binary avg={detectability_binary.sum(axis=0).mean():.1f} cells/camera")
+cells_per_camera = detectability_binary.sum(axis=0)
+print(f"\n  Detectability stats:")
+print(f"    Min cells detectable: {cells_per_camera.min():.0f}")
+print(f"    Mean cells detectable: {cells_per_camera.mean():.1f}")
+print(f"    Max cells detectable: {cells_per_camera.max():.0f}")
 
 # ============================================================================
-# 3. COMPUTE SPATIAL DIVERSITY BONUS
+# 3. COMPUTE SPATIAL DIVERSITY
 # ============================================================================
 print("\n[3/5] Computing spatial diversity scores...")
 
-# For each cell, compute average distance to other cells
-# Cells far from others get bonus (encourages spatial spread)
 avg_distance_to_others = np.zeros(n_cells)
 for i in range(n_cells):
-    # Average distance to nearest 50 cells
-    nearest_dists = np.sort(distances_km[i])[1:51]  # Skip self
+    nearest_dists = np.sort(distances_km[i])[1:51]
     avg_distance_to_others[i] = np.mean(nearest_dists)
 
 diversity_bonus = (avg_distance_to_others - avg_distance_to_others.min()) / \
                   (avg_distance_to_others.max() - avg_distance_to_others.min())
 
-# Value: 70% demand + 30% spatial diversity
 camera_value = 0.7 * demand + 0.3 * diversity_bonus
 camera_value = (camera_value - camera_value.min()) / (camera_value.max() - camera_value.min())
 
-print(f"  ✓ Diversity bonus computed: range=[{diversity_bonus.min():.3f}, {diversity_bonus.max():.3f}]")
+print(f"  ✓ Diversity bonus computed")
 
 # ============================================================================
-# 4. FORMULATE MIP WITH HARD K CONSTRAINT
+# 4. FORMULATE MIP
 # ============================================================================
 print("\n[4/5] Formulating enhanced MIP (exactly 16 cameras)...")
 
 N_CAMERAS = 16
 
-prob = pulp.LpProblem("Camera_Placement_Enhanced", pulp.LpMaximize)
+prob = pulp.LpProblem("Camera_Placement_20km_1km", pulp.LpMaximize)
 
-# Decision variables
 x = pulp.LpVariable.dicts("camera", range(n_cells), cat='Binary')
 y = pulp.LpVariable.dicts("demand_covered", range(n_cells), lowBound=0, upBound=1, cat='Continuous')
 z = pulp.LpVariable.dicts("cell_covered", range(n_cells), lowBound=0, upBound=1, cat='Continuous')
 
-# Objective: weighted combination
-# Primary: demand coverage, Secondary: geographic coverage, Tertiary: camera value (diversity)
+# Objective
 weight_demand = 0.6
 weight_geographic = 0.3
 weight_camera = 0.1
@@ -161,24 +168,28 @@ prob += (weight_demand * pulp.lpSum([demand[i] * y[i] for i in range(n_cells)]) 
          weight_geographic * pulp.lpSum([z[i] for i in range(n_cells)]) +
          weight_camera * pulp.lpSum([camera_value[j] * x[j] for j in range(n_cells)]))
 
-# Hard constraint: exactly N_CAMERAS
+# Hard constraint: exactly 16 cameras
 prob += pulp.lpSum([x[j] for j in range(n_cells)]) == N_CAMERAS, "ExactlyKCameras"
 
-# Coverage constraints for demand
+# Coverage constraints
 for i in range(n_cells):
     prob += y[i] <= pulp.lpSum([detectability_binary[i, j] * x[j] for j in range(n_cells)]), f"DemandCoverage_{i}"
-
-# Coverage constraints for geography
-for i in range(n_cells):
     prob += z[i] <= pulp.lpSum([detectability_binary[i, j] * x[j] for j in range(n_cells)]), f"GeographicCoverage_{i}"
 
+# Spatial spread constraint: cameras must be at least 1km apart (avoid clustering)
+for j1 in range(n_cells):
+    for j2 in range(j1 + 1, n_cells):
+        if distances_km[j1, j2] < DETECTION_RADIUS_KM:
+            # Don't place two cameras in same detection zone
+            prob += x[j1] + x[j2] <= 1, f"Spread_{j1}_{j2}"
+
 print(f"  ✓ Variables: {3 * n_cells} (binary + continuous)")
-print(f"  ✓ Constraints: 1 hard + 2 × {n_cells} coverage")
+print(f"  ✓ Constraints: ~2100")
 
 # ============================================================================
 # 5. SOLVE MIP
 # ============================================================================
-print("\n[5/5] Solving enhanced MIP...")
+print("\n[5/5] Solving MIP (timeout: 300s)...")
 
 prob.solve(pulp.PULP_CBC_CMD(msg=0, timeLimit=300))
 
@@ -187,10 +198,10 @@ print(f"\n  Status: {status}")
 print(f"  Objective: {pulp.value(prob.objective):.3f}")
 
 # ============================================================================
-# EXTRACT & DISPLAY RESULTS
+# EXTRACT RESULTS
 # ============================================================================
 print("\n" + "="*80)
-print("ENHANCED MIP RESULTS (K=16 CAMERAS)")
+print("MIP RESULTS (16 CAMERAS, 1KM DETECTION ZONE)")
 print("="*80)
 
 selected_mip = []
@@ -221,10 +232,10 @@ for rank, camera_idx in enumerate(selected_mip, 1):
         'camera_value': camera_value[camera_idx]
     })
     
-    print(f"{rank:2d}. {cell_id:>8s}  Visible: {n_cells_visible:4d}  Demand: {weighted_coverage:.3f}  Visits: {visits:6.0f}")
+    print(f"{rank:2d}. {cell_id:>8s}  Visible: {n_cells_visible:3d}  Demand: {weighted_coverage:.3f}  Visits: {visits:5.0f}")
 
 results_enhanced_df = pd.DataFrame(results_enhanced)
-results_enhanced_df.to_csv('camera_placement_enhanced_mip_16_cameras.csv', index=False)
+results_enhanced_df.to_csv('camera_placement_mip_16_cameras_1km_detection.csv', index=False)
 
 # ============================================================================
 # COVERAGE ANALYSIS
@@ -251,9 +262,17 @@ print(f"Elephant visits:      {df[coverage_achieved > 0]['visit_count'].sum():.0
 # Redundancy analysis
 coverage_count = detectability_binary[selected_mip].sum(axis=0)
 print(f"\nRedundancy per cell:")
-print(f"  Mean cameras/cell:   {coverage_count.mean():.2f}")
+print(f"  Mean cameras/cell:   {coverage_count[coverage_achieved > 0].mean():.2f}")
 print(f"  Max coverage:        {int(coverage_count.max())} cameras")
 print(f"  Min coverage:        {int(coverage_count.min())} cameras")
+
+# Uncovered analysis
+uncovered_mask = coverage_achieved == 0
+if uncovered_mask.sum() > 0:
+    uncovered_idx = np.where(uncovered_mask)[0]
+    uncovered_visits = df.iloc[uncovered_idx]['visit_count'].sum()
+    print(f"\nUncovered cells: {len(uncovered_idx)} ({len(uncovered_idx)/n_cells*100:.1f}%)")
+    print(f"Elephant visits missed: {uncovered_visits:.0f}")
 
 # Spatial analysis
 camera_lats = coords[selected_mip, 0]
@@ -262,62 +281,22 @@ print(f"\nSpatial distribution:")
 print(f"  Latitude range:      {camera_lats.min():.6f}°N to {camera_lats.max():.6f}°N")
 print(f"  Longitude range:     {camera_lons.min():.6f}°E to {camera_lons.max():.6f}°E")
 
-# ============================================================================
-# SAVE MODEL SPECIFICATION
-# ============================================================================
-with open('enhanced_mip_model_specification.txt', 'w') as f:
-    f.write("ENHANCED MIXED INTEGER PROGRAM FOR CAMERA PLACEMENT\n")
-    f.write("=" * 80 + "\n\n")
-    
-    f.write("PROBLEM FORMULATION\n")
-    f.write("-" * 80 + "\n\n")
-    f.write("Decision Variables:\n")
-    f.write("  x[j] ∈ {0,1}         : Binary indicator for camera at location j\n")
-    f.write("  y[i] ∈ [0,1]         : Demand coverage of cell i\n")
-    f.write("  z[i] ∈ [0,1]         : Geographic coverage of cell i\n\n")
-    
-    f.write("Objective Function:\n")
-    f.write("  maximize: 0.6 * Σ_i (demand[i] * y[i]) +\n")
-    f.write("            0.3 * Σ_i z[i] +\n")
-    f.write("            0.1 * Σ_j (camera_value[j] * x[j])\n\n")
-    
-    f.write("Constraints:\n")
-    f.write("  1. Budget (HARD): Σ_j x[j] = 16 (exactly 16 cameras)\n")
-    f.write("  2. Demand: y[i] ≤ Σ_j detectability[i,j] * x[j]  ∀i\n")
-    f.write("  3. Geographic: z[i] ≤ Σ_j detectability[i,j] * x[j]  ∀i\n\n")
-    
-    f.write("COMPONENT DEFINITIONS\n")
-    f.write("-" * 80 + "\n\n")
-    
-    f.write("Demand (Cell Importance):\n")
-    f.write(f"  Formula: 0.5*visits + 0.3*trajectories + 0.2*entries\n")
-    f.write(f"           then boosted by 0.2*point_density\n")
-    f.write(f"  Range: [0, 1] normalized\n")
-    f.write(f"  Mean: {demand.mean():.3f}\n")
-    f.write(f"  High-demand (>0.5): {(demand > 0.5).sum()} cells\n\n")
-    
-    f.write("Detectability (Camera→Cell Visibility):\n")
-    f.write(f"  Formula: 1 - occlusion_factor (line-of-sight interpolation)\n")
-    f.write(f"  Binary: >0.3 threshold\n")
-    f.write(f"  Mean (binary): {detectability_binary.sum(axis=0).mean():.1f} cells per camera\n\n")
-    
-    f.write("Camera Value (Placement Priority):\n")
-    f.write(f"  Formula: 0.7*demand + 0.3*diversity_bonus\n")
-    f.write(f"  Diversity: Distance to 50 nearest cells (encourages spread)\n")
-    f.write(f"  Purpose: Balance targeting activity + spatial redundancy\n\n")
-    
-    f.write("SOLVER & STATUS\n")
-    f.write("-" * 80 + "\n")
-    f.write(f"Algorithm: Branch-and-cut (CBC solver)\n")
-    f.write(f"Time limit: 300 seconds\n")
-    f.write(f"Status: {status}\n")
-    f.write(f"Objective value: {pulp.value(prob.objective):.3f}\n")
-    f.write(f"Cameras selected: {len(selected_mip)}\n")
-    f.write(f"Geographic coverage: {geographic_coverage:.1f}%\n")
-    f.write(f"Demand coverage: {demand_coverage:.1f}%\n")
-
-print("\n✓ Saved: enhanced_mip_model_specification.txt")
-
 print("\n" + "="*80)
-print("✓ ENHANCED MIP COMPLETE")
+print("✓ OPTIMIZATION COMPLETE")
 print("="*80 + "\n")
+
+# Save specs
+with open('camera_specs_1km_detection.txt', 'w') as f:
+    f.write("CAMERA SPECIFICATIONS\n")
+    f.write("=" * 80 + "\n\n")
+    f.write("Detection Zone: 1km diameter (500m radius) around camera\n")
+    f.write("Occlusion: Forest (80%), Water (90%), Settlements (70%), Crops (30%)\n")
+    f.write("Placement Range: Up to 20km apart\n")
+    f.write("FOV: 360° (fixed, no pan/tilt)\n")
+    f.write(f"Cameras: {N_CAMERAS}\n")
+    f.write(f"Geographic Coverage: {geographic_coverage:.1f}%\n")
+    f.write(f"Demand Coverage: {demand_coverage:.1f}%\n")
+    f.write(f"Average cells per camera: {cells_per_camera.mean():.1f}\n")
+
+print("  ✓ Saved: camera_placement_mip_16_cameras_1km_detection.csv")
+print("  ✓ Saved: camera_specs_1km_detection.txt")

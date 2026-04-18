@@ -1,0 +1,68 @@
+
+ML-BASED CAMERA PLACEMENT OPTIMIZATION
+Generated: 2026-04-17 20:20:42.998794
+
+MODELS TRAINED:
+  - XGBoost: Test R² = 1.0000
+  - Random Forest: Test R² = 1.0000
+  - Poisson Regression: Test R² = 0.8363
+
+SELECTED MODEL: XGBOOST
+
+LEARNED IMPORTANCE SURFACE:
+  - Mean: 1.374
+  - Median: 0.000
+  - Max: 23.890
+  - High-importance cells (>75%ile): 275
+
+OPTIMIZATION RESULTS:
+  - Algorithm: Greedy Camera Selection
+  - Cameras Selected: 16
+  - Budget Utilization: 100%
+
+TOP 5 CAMERA LOCATIONS:
+
+  1. R001C004
+     Learned Importance: 6.000
+     Cells Visible: 12
+     Visits Detectable: 127
+  2. R006C047
+     Learned Importance: 9.000
+     Cells Visible: 13
+     Visits Detectable: 104
+  3. R001C007
+     Learned Importance: 16.002
+     Cells Visible: 12
+     Visits Detectable: 109
+  4. R000C046
+     Learned Importance: 17.000
+     Cells Visible: 9
+     Visits Detectable: 82
+  5. R002C042
+     Learned Importance: 2.000
+     Cells Visible: 13
+     Visits Detectable: 81
+
+TOP 10 MOST IMPORTANT FEATURES:
+
+  1. pass_through_points: 0.5056
+  2. visit_count: 0.4646
+  3. activity_score: 0.0227
+  4. entry_count: 0.0031
+  5. avg_points_per_visit: 0.0026
+  6. unique_trajectory_count: 0.0013
+  7. edge_density: 0.0000
+  8. pct_forest: 0.0000
+  9. habitat_quality: 0.0000
+  10. dist_to_water_m: 0.0000
+
+OUTPUT ARTIFACTS:
+  ✓ model_checkpoint_ml_camera_placement.pkl (trained model + metadata)
+  ✓ camera_placement_ml_learned.csv (16 camera locations)
+  ✓ camera_placements_ml_learned.kml (Google Maps visualization)
+  ✓ ml_feature_importance.csv (feature rankings)
+
+KEY INSIGHTS:
+  - ML learned importance from spatial & trajectory features
+  - Optimized camera placement using learned weights + terrain visibility
+  - Combined approach: data-driven (ML) + physics-based (terrain occlusion)

@@ -1,0 +1,196 @@
+================================================================================
+ML-BASED CAMERA PLACEMENT OPTIMIZATION PIPELINE
+================================================================================
+
+[STAGE 1] Loading and engineering features...
+Dataset shape: (1071, 29)
+Missing values: 0
+
+Input features: 28
+Target (visit_count) statistics:
+  Mean: 1.37, Median: 0.00, Max: 24
+  Cells with 0 visits: 796 / 1071
+
+[STAGE 2] Normalizing features...
+Features normalized to [0, 1]
+
+[STAGE 3] Splitting data...
+Training set: 856 samples
+Test set: 215 samples
+Train target mean: 1.43
+Test target mean: 1.16
+
+[STAGE 4] Training ML models...
+
+  1. XGBoost Regressor...
+     Train R²: 1.0000, Test R²: 1.0000
+  2. Random Forest Regressor...
+     Train R²: 0.9990, Test R²: 1.0000
+  3. Poisson Regression...
+     Train R²: 0.8438, Test R²: 0.8363
+
+  ► Selected model: XGBOOST
+
+[STAGE 5] Predicting importance scores for all cells...
+Importance scores computed:
+  Mean: 1.374, Median: 0.000
+  Min: 0.000, Max: 23.890
+  High-importance cells (>75th percentile): 275
+
+[STAGE 6] Computing detectability matrix...
+Detectability matrix: (1071, 1071)
+Sparsity: 98.9%
+
+[STAGE 7] Optimizing camera placement with learned importance (Greedy)...
+  1. Selected camera at R001C004, gain: 5.05
+  2. Selected camera at R006C047, gain: 4.35
+  3. Selected camera at R001C007, gain: 3.71
+  4. Selected camera at R000C046, gain: 3.41
+  5. Selected camera at R002C042, gain: 3.12
+  6. Selected camera at R004C044, gain: 2.34
+  7. Selected camera at R002C001, gain: 2.22
+  8. Selected camera at R004C004, gain: 1.38
+  9. Selected camera at R010C047, gain: 1.24
+  10. Selected camera at R012C023, gain: 1.11
+  11. Selected camera at R000C016, gain: 0.92
+  12. Selected camera at R001C049, gain: 0.92
+  13. Selected camera at R008C050, gain: 0.92
+  14. Selected camera at R010C026, gain: 0.79
+  15. Selected camera at R007C045, gain: 0.78
+  16. Selected camera at R000C011, gain: 0.62
+
+Selected 16 cameras
+
+[STAGE 8] Processing results...
+  1. R001C004 @ (10.75606, 76.64355)
+     Learned Importance: 6.00
+     Cells Visible: 12, Weighted Coverage: 5.05
+  2. R006C047 @ (10.77852, 76.84020)
+     Learned Importance: 9.00
+     Cells Visible: 13, Weighted Coverage: 4.35
+  3. R001C007 @ (10.75606, 76.65727)
+     Learned Importance: 16.00
+     Cells Visible: 12, Weighted Coverage: 4.46
+  4. R000C046 @ (10.75157, 76.83562)
+     Learned Importance: 17.00
+     Cells Visible: 9, Weighted Coverage: 3.41
+  5. R002C042 @ (10.76055, 76.81733)
+     Learned Importance: 2.00
+     Cells Visible: 13, Weighted Coverage: 3.12
+  6. R004C044 @ (10.76954, 76.82648)
+     Learned Importance: 7.00
+     Cells Visible: 13, Weighted Coverage: 2.92
+  7. R002C001 @ (10.76055, 76.62983)
+     Learned Importance: 7.00
+     Cells Visible: 12, Weighted Coverage: 3.56
+  8. R004C004 @ (10.76954, 76.64355)
+     Learned Importance: 8.00
+     Cells Visible: 13, Weighted Coverage: 2.43
+  9. R010C047 @ (10.79649, 76.84020)
+     Learned Importance: 8.00
+     Cells Visible: 13, Weighted Coverage: 1.41
+  10. R012C023 @ (10.80547, 76.73044)
+     Learned Importance: 17.00
+     Cells Visible: 13, Weighted Coverage: 1.11
+  11. R000C016 @ (10.75157, 76.69843)
+     Learned Importance: 2.00
+     Cells Visible: 9, Weighted Coverage: 0.92
+  12. R001C049 @ (10.75606, 76.84934)
+     Learned Importance: 1.00
+     Cells Visible: 11, Weighted Coverage: 1.59
+  13. R008C050 @ (10.78750, 76.85392)
+     Learned Importance: 2.00
+     Cells Visible: 9, Weighted Coverage: 0.92
+  14. R010C026 @ (10.79649, 76.74416)
+     Learned Importance: 4.00
+     Cells Visible: 13, Weighted Coverage: 0.79
+  15. R007C045 @ (10.78301, 76.83105)
+     Learned Importance: 6.00
+     Cells Visible: 13, Weighted Coverage: 2.87
+  16. R000C011 @ (10.75157, 76.67556)
+     Learned Importance: 0.00
+     Cells Visible: 9, Weighted Coverage: 0.62
+
+[STAGE 9] Saving artifacts...
+✓ Model checkpoint saved: model_checkpoint_ml_camera_placement.pkl
+✓ Camera placements saved: camera_placement_ml_learned.csv
+  Generating KML...
+✓ KML saved: camera_placements_ml_learned.kml
+✓ Feature importance saved: ml_feature_importance.csv
+
+================================================================================
+SUMMARY REPORT
+================================================================================
+
+ML-BASED CAMERA PLACEMENT OPTIMIZATION
+Generated: 2026-04-17 20:20:42.998794
+
+MODELS TRAINED:
+  - XGBoost: Test R² = 1.0000
+  - Random Forest: Test R² = 1.0000
+  - Poisson Regression: Test R² = 0.8363
+
+SELECTED MODEL: XGBOOST
+
+LEARNED IMPORTANCE SURFACE:
+  - Mean: 1.374
+  - Median: 0.000
+  - Max: 23.890
+  - High-importance cells (>75%ile): 275
+
+OPTIMIZATION RESULTS:
+  - Algorithm: Greedy Camera Selection
+  - Cameras Selected: 16
+  - Budget Utilization: 100%
+
+TOP 5 CAMERA LOCATIONS:
+
+  1. R001C004
+     Learned Importance: 6.000
+     Cells Visible: 12
+     Visits Detectable: 127
+  2. R006C047
+     Learned Importance: 9.000
+     Cells Visible: 13
+     Visits Detectable: 104
+  3. R001C007
+     Learned Importance: 16.002
+     Cells Visible: 12
+     Visits Detectable: 109
+  4. R000C046
+     Learned Importance: 17.000
+     Cells Visible: 9
+     Visits Detectable: 82
+  5. R002C042
+     Learned Importance: 2.000
+     Cells Visible: 13
+     Visits Detectable: 81
+
+TOP 10 MOST IMPORTANT FEATURES:
+
+  1. pass_through_points: 0.5056
+  2. visit_count: 0.4646
+  3. activity_score: 0.0227
+  4. entry_count: 0.0031
+  5. avg_points_per_visit: 0.0026
+  6. unique_trajectory_count: 0.0013
+  7. edge_density: 0.0000
+  8. pct_forest: 0.0000
+  9. habitat_quality: 0.0000
+  10. dist_to_water_m: 0.0000
+
+OUTPUT ARTIFACTS:
+  ✓ model_checkpoint_ml_camera_placement.pkl (trained model + metadata)
+  ✓ camera_placement_ml_learned.csv (16 camera locations)
+  ✓ camera_placements_ml_learned.kml (Google Maps visualization)
+  ✓ ml_feature_importance.csv (feature rankings)
+
+KEY INSIGHTS:
+  - ML learned importance from spatial & trajectory features
+  - Optimized camera placement using learned weights + terrain visibility
+  - Combined approach: data-driven (ML) + physics-based (terrain occlusion)
+
+
+✓ Summary saved: ml_optimization_summary.txt
+
+================================================================================

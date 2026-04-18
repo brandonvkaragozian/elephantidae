@@ -1,0 +1,2 @@
+rank,cell_id,latitude,longitude,cells_visible,weighted_demand_coverage,elephant_visits_in_range,camera_idx
+1,R001C001,10.7560632,76.62983212,1036,99.61792149091788,1472,52

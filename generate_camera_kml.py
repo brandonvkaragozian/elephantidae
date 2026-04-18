@@ -148,7 +148,7 @@ Coverage Metrics:
 Cells Visible: {visible}
 Demand Coverage: {demand:.2f}
 Elephant Visits in Range: {visits}
-Coverage Radius: 40 km (360° view)
+Coverage Radius: 20 km (360° view)
 
 Deployment Priority:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

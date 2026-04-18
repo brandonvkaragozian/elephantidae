@@ -1,0 +1,32 @@
+HOTSPOT-FOCUSED CAMERA PLACEMENT OPTIMIZATION
+Generated: 2026-04-17 19:47:41.561185
+
+OBJECTIVE: Maximize coverage of elephant collision/congregation zones
+
+HOTSPOT DEFINITION:
+- TIER 1 (Critical): 66 cells with 8+ elephant visits = 790 visits
+- TIER 2 (High): 118 cells with 3-8 visits = 545 visits
+- Combined: 184 cells = 1335 visits (90.7% of all activity)
+
+CAMERA SPECIFICATIONS:
+- Budget: 16 cameras
+- Placement range: ±20km from any grid cell
+- Detection zone: 1km diameter (500m radius)
+- Terrain occlusion: Forest 80%, Water 90%, Settlements 70%
+- Spatial constraint: No 2 cameras within same 1km zone
+
+OPTIMIZATION RESULTS:
+- Solver: CBC (COIN-OR Branch-and-Cut)
+- Status: Optimal
+- Objective value: 214.12
+- Time: 300s timeout
+
+COVERAGE ACHIEVED:
+- Tier 1 cells covered: 54/66 (81.8%)
+- Tier 2 cells covered: 64/118 (54.2%)
+- Total hotspot cells covered: 118/184
+
+KEY INSIGHT:
+16 cameras can focus on elephant congregation areas where conflicts occur,
+rather than spreading thin across entire sanctuary. This prioritizes areas
+where human-wildlife conflict is most likely.

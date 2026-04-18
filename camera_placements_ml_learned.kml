@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>ML-Based Camera Placement - Walayar Elephant Monitoring</name>
+  <description>16 Cameras Optimized using Learned Importance Scores</description>
+  
+  <Style id="cameraIcon">
+    <IconStyle>
+      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/camera.png</href></Icon>
+      <scale>1.2</scale>
+    </IconStyle>
+  </Style>
+  
+  <Style id="detectionZone">
+    <PolyStyle><fill>1</fill><outline>1</outline><color>7700FF00</color></PolyStyle>
+    <LineStyle><color>FF00FF00</color><width>2</width></LineStyle>
+  </Style>
+  
+  <Folder>
+    <name>High-Importance Zones (ML-Learned)</name>
+    <description>Grid cells with high learned importance</description>
+
+    <Placemark>
+      <name>R000C003 (Importance: 16.00)</name>
+      <description>Visits: 16, Learned Importance: 16.002</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.63672842,10.74932164,0
+              76.64122842,10.74932164,0
+              76.64122842,10.75382164,0
+              76.63672842,10.75382164,0
+              76.63672842,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R000C007 (Importance: 17.00)</name>
+      <description>Visits: 17, Learned Importance: 16.999</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65502106,10.74932164,0
+              76.65952106,10.74932164,0
+              76.65952106,10.75382164,0
+              76.65502106,10.75382164,0
+              76.65502106,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R000C042 (Importance: 15.00)</name>
+      <description>Visits: 15, Learned Importance: 14.999</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81508166,10.74932164,0
+              76.81958166000001,10.74932164,0
+              76.81958166000001,10.75382164,0
+              76.81508166,10.75382164,0
+              76.81508166,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R000C046 (Importance: 17.00)</name>
+      <description>Visits: 17, Learned Importance: 17.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83337431999999,10.74932164,0
+              76.83787432,10.74932164,0
+              76.83787432,10.75382164,0
+              76.83337431999999,10.75382164,0
+              76.83337431999999,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R000C047 (Importance: 17.00)</name>
+      <description>Visits: 17, Learned Importance: 17.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83794746,10.74932164,0
+              76.84244746,10.74932164,0
+              76.84244746,10.75382164,0
+              76.83794746,10.75382164,0
+              76.83794746,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R000C048 (Importance: 13.00)</name>
+      <description>Visits: 13, Learned Importance: 13.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.84252062,10.74932164,0
+              76.84702062000001,10.74932164,0
+              76.84702062000001,10.75382164,0
+              76.84252062,10.75382164,0
+              76.84252062,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R001C002 (Importance: 16.00)</name>
+      <description>Visits: 16, Learned Importance: 16.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.63215525999999,10.7538132,0
+              76.63665526,10.7538132,0
+              76.63665526,10.7583132,0
+              76.63215525999999,10.7583132,0
+              76.63215525999999,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R001C006 (Importance: 12.00)</name>
+      <description>Visits: 12, Learned Importance: 12.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65044792,10.7538132,0
+              76.65494792000001,10.7538132,0
+              76.65494792000001,10.7583132,0
+              76.65044792,10.7583132,0
+              76.65044792,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R001C007 (Importance: 16.00)</name>
+      <description>Visits: 16, Learned Importance: 16.002</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65502106,10.7538132,0
+              76.65952106,10.7538132,0
+              76.65952106,10.7583132,0
+              76.65502106,10.7583132,0
+              76.65502106,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R001C008 (Importance: 15.00)</name>
+      <description>Visits: 15, Learned Importance: 14.999</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65959422,10.7538132,0
+              76.66409422000001,10.7538132,0
+              76.66409422000001,10.7583132,0
+              76.65959422,10.7583132,0
+              76.65959422,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R001C009 (Importance: 14.00)</name>
+      <description>Visits: 14, Learned Importance: 14.001</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.66416741999998,10.7538132,0
+              76.66866741999999,10.7538132,0
+              76.66866741999999,10.7583132,0
+              76.66416741999998,10.7583132,0
+              76.66416741999998,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R002C003 (Importance: 17.00)</name>
+      <description>Visits: 17, Learned Importance: 16.999</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.63672842,10.75830474,0
+              76.64122842,10.75830474,0
+              76.64122842,10.76280474,0
+              76.63672842,10.76280474,0
+              76.63672842,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R002C004 (Importance: 13.00)</name>
+      <description>Visits: 13, Learned Importance: 13.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.64130155999999,10.75830474,0
+              76.64580156,10.75830474,0
+              76.64580156,10.76280474,0
+              76.64130155999999,10.76280474,0
+              76.64130155999999,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R002C043 (Importance: 12.00)</name>
+      <description>Visits: 12, Learned Importance: 12.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81965482,10.75830474,0
+              76.82415482,10.75830474,0
+              76.82415482,10.76280474,0
+              76.81965482,10.76280474,0
+              76.81965482,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R003C001 (Importance: 14.00)</name>
+      <description>Visits: 14, Learned Importance: 13.999</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.62758212,10.76279634,0
+              76.63208212,10.76279634,0
+              76.63208212,10.76729634,0
+              76.62758212,10.76729634,0
+              76.62758212,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R003C004 (Importance: 12.00)</name>
+      <description>Visits: 12, Learned Importance: 12.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.64130155999999,10.76279634,0
+              76.64580156,10.76279634,0
+              76.64580156,10.76729634,0
+              76.64130155999999,10.76729634,0
+              76.64130155999999,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R004C040 (Importance: 12.01)</name>
+      <description>Visits: 12, Learned Importance: 12.007</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.80593536,10.7672879,0
+              76.81043536000001,10.7672879,0
+              76.81043536000001,10.7717879,0
+              76.80593536,10.7717879,0
+              76.80593536,10.7672879,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R005C046 (Importance: 15.00)</name>
+      <description>Visits: 15, Learned Importance: 15.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83337431999999,10.77177944,0
+              76.83787432,10.77177944,0
+              76.83787432,10.77627944,0
+              76.83337431999999,10.77627944,0
+              76.83337431999999,10.77177944,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R006C046 (Importance: 13.00)</name>
+      <description>Visits: 13, Learned Importance: 13.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83337431999999,10.776271,0
+              76.83787432,10.776271,0
+              76.83787432,10.780771,0
+              76.83337431999999,10.780771,0
+              76.83337431999999,10.776271,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R006C050 (Importance: 12.00)</name>
+      <description>Visits: 12, Learned Importance: 12.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.85166695999999,10.776271,0
+              76.85616696,10.776271,0
+              76.85616696,10.780771,0
+              76.85166695999999,10.780771,0
+              76.85166695999999,10.776271,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R008C027 (Importance: 13.00)</name>
+      <description>Visits: 13, Learned Importance: 13.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74648425999999,10.7852541,0
+              76.75098426,10.7852541,0
+              76.75098426,10.7897541,0
+              76.74648425999999,10.7897541,0
+              76.74648425999999,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R008C028 (Importance: 13.00)</name>
+      <description>Visits: 13, Learned Importance: 13.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.75105742,10.7852541,0
+              76.75555742,10.7852541,0
+              76.75555742,10.7897541,0
+              76.75105742,10.7897541,0
+              76.75105742,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R008C029 (Importance: 13.00)</name>
+      <description>Visits: 13, Learned Importance: 13.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.75563062,10.7852541,0
+              76.76013062000001,10.7852541,0
+              76.76013062000001,10.7897541,0
+              76.75563062,10.7897541,0
+              76.75563062,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R009C025 (Importance: 15.00)</name>
+      <description>Visits: 15, Learned Importance: 15.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73733795999999,10.78974564,0
+              76.74183796,10.78974564,0
+              76.74183796,10.79424564,0
+              76.73733795999999,10.79424564,0
+              76.73733795999999,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R009C027 (Importance: 17.00)</name>
+      <description>Visits: 17, Learned Importance: 16.999</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74648425999999,10.78974564,0
+              76.75098426,10.78974564,0
+              76.75098426,10.79424564,0
+              76.74648425999999,10.79424564,0
+              76.74648425999999,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R010C025 (Importance: 16.00)</name>
+      <description>Visits: 16, Learned Importance: 16.001</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73733795999999,10.794237199999998,0
+              76.74183796,10.794237199999998,0
+              76.74183796,10.798737199999998,0
+              76.73733795999999,10.798737199999998,0
+              76.73733795999999,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R011C023 (Importance: 12.00)</name>
+      <description>Visits: 12, Learned Importance: 12.005</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72819161999999,10.79872874,0
+              76.73269162,10.79872874,0
+              76.73269162,10.80322874,0
+              76.72819161999999,10.80322874,0
+              76.72819161999999,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R011C024 (Importance: 15.00)</name>
+      <description>Visits: 15, Learned Importance: 14.999</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73276482,10.79872874,0
+              76.73726482000001,10.79872874,0
+              76.73726482000001,10.80322874,0
+              76.73276482,10.80322874,0
+              76.73276482,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R012C022 (Importance: 23.89)</name>
+      <description>Visits: 24, Learned Importance: 23.890</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72361845999998,10.80322034,0
+              76.72811845999999,10.80322034,0
+              76.72811845999999,10.80772034,0
+              76.72361845999998,10.80772034,0
+              76.72361845999998,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R012C023 (Importance: 17.00)</name>
+      <description>Visits: 17, Learned Importance: 17.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72819161999999,10.80322034,0
+              76.73269162,10.80322034,0
+              76.73269162,10.80772034,0
+              76.72819161999999,10.80772034,0
+              76.72819161999999,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R012C024 (Importance: 15.00)</name>
+      <description>Visits: 15, Learned Importance: 14.999</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73276482,10.80322034,0
+              76.73726482000001,10.80322034,0
+              76.73726482000001,10.80772034,0
+              76.73276482,10.80772034,0
+              76.73276482,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R012C026 (Importance: 17.00)</name>
+      <description>Visits: 17, Learned Importance: 16.999</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74191112,10.80322034,0
+              76.74641112,10.80322034,0
+              76.74641112,10.80772034,0
+              76.74191112,10.80772034,0
+              76.74191112,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R012C028 (Importance: 12.00)</name>
+      <description>Visits: 12, Learned Importance: 12.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.75105742,10.80322034,0
+              76.75555742,10.80322034,0
+              76.75555742,10.80772034,0
+              76.75105742,10.80772034,0
+              76.75105742,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>R013C023 (Importance: 13.00)</name>
+      <description>Visits: 13, Learned Importance: 13.000</description>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72819161999999,10.8077119,0
+              76.73269162,10.8077119,0
+              76.73269162,10.8122119,0
+              76.72819161999999,10.8122119,0
+              76.72819161999999,10.8077119,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+  </Folder>
+  
+  <Folder>
+    <name>Optimized Camera Locations (ML-Weighted)</name>
+    <description>16 cameras optimized using learned importance</description>
+
+    <Placemark>
+      <name>Camera 1: R001C004</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 1/16<br/>
+        <b>Cell:</b> R001C004<br/>
+        <b>Learned Importance:</b> 6.000<br/>
+        <b>Weighted Coverage:</b> 5.05<br/>
+        <b>Cells Visible:</b> 12<br/>
+        <b>Total Visits Detectable:</b> 127
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.64355155999999,10.7560632,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 1</name>
+      <description>1km detection radius for Camera 1</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.65255155999999,10.7560632,0 76.6524148297771,10.757626033599003,0 76.65200879358706,10.75914138128993,0 76.65134578863405,10.7605632,0 76.65044595998806,10.76184828848718,0 76.64933664848716,10.76295759998807,0 76.64805155999998,10.76385742863406,0 76.64662974128993,10.764520433587073,0 76.64511439359899,10.76492646977711,0 76.64355155999999,10.7650632,0 76.641988726401,10.76492646977711,0 76.64047337871006,10.764520433587073,0 76.63905156,10.76385742863406,0 76.63776647151282,10.76295759998807,0 76.63665716001192,10.76184828848718,0 76.63575733136594,10.7605632,0 76.63509432641293,10.75914138128993,0 76.63468829022288,10.757626033599003,0 76.63455155999999,10.7560632,0 76.63468829022288,10.754500366400997,0 76.63509432641293,10.752985018710069,0 76.63575733136594,10.7515632,0 76.63665716001192,10.75027811151282,0 76.63776647151282,10.74916880001193,0 76.63905156,10.74826897136594,0 76.64047337871006,10.747605966412927,0 76.641988726401,10.747199930222889,0 76.64355155999999,10.7470632,0 76.64511439359899,10.747199930222889,0 76.64662974128993,10.747605966412927,0 76.64805155999998,10.74826897136594,0 76.64933664848716,10.74916880001193,0 76.65044595998806,10.75027811151282,0 76.65134578863405,10.7515632,0 76.65200879358706,10.752985018710069,0 76.6524148297771,10.754500366400997,0 76.65255155999999,10.7560632,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 2: R006C047</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 2/16<br/>
+        <b>Cell:</b> R006C047<br/>
+        <b>Learned Importance:</b> 9.000<br/>
+        <b>Weighted Coverage:</b> 4.35<br/>
+        <b>Cells Visible:</b> 13<br/>
+        <b>Total Visits Detectable:</b> 104
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.84019746,10.778521,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 2</name>
+      <description>1km detection radius for Camera 2</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.84919746,10.778521,0 76.84906072977711,10.780083833599003,0 76.84865469358706,10.78159918128993,0 76.84799168863405,10.783021,0 76.84709185998807,10.78430608848718,0 76.84598254848717,10.78541539998807,0 76.84469745999999,10.78631522863406,0 76.84327564128994,10.786978233587073,0 76.841760293599,10.78738426977711,0 76.84019746,10.787521,0 76.838634626401,10.78738426977711,0 76.83711927871006,10.786978233587073,0 76.83569746,10.78631522863406,0 76.83441237151283,10.78541539998807,0 76.83330306001193,10.78430608848718,0 76.83240323136594,10.783021,0 76.83174022641293,10.78159918128993,0 76.83133419022289,10.780083833599003,0 76.83119746,10.778521,0 76.83133419022289,10.776958166400997,0 76.83174022641293,10.775442818710069,0 76.83240323136594,10.774021,0 76.83330306001193,10.77273591151282,0 76.83441237151283,10.77162660001193,0 76.83569746,10.77072677136594,0 76.83711927871006,10.770063766412926,0 76.838634626401,10.769657730222889,0 76.84019746,10.769521,0 76.841760293599,10.769657730222889,0 76.84327564128994,10.770063766412926,0 76.84469745999999,10.77072677136594,0 76.84598254848717,10.77162660001193,0 76.84709185998807,10.77273591151282,0 76.84799168863405,10.774021,0 76.84865469358706,10.775442818710069,0 76.84906072977711,10.776958166400997,0 76.84919746,10.778521,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 3: R001C007</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 3/16<br/>
+        <b>Cell:</b> R001C007<br/>
+        <b>Learned Importance:</b> 16.002<br/>
+        <b>Weighted Coverage:</b> 4.46<br/>
+        <b>Cells Visible:</b> 12<br/>
+        <b>Total Visits Detectable:</b> 109
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.65727106,10.7560632,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 3</name>
+      <description>1km detection radius for Camera 3</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.66627106,10.7560632,0 76.66613432977711,10.757626033599003,0 76.66572829358707,10.75914138128993,0 76.66506528863405,10.7605632,0 76.66416545998807,10.76184828848718,0 76.66305614848717,10.76295759998807,0 76.66177105999999,10.76385742863406,0 76.66034924128994,10.764520433587073,0 76.658833893599,10.76492646977711,0 76.65727106,10.7650632,0 76.655708226401,10.76492646977711,0 76.65419287871006,10.764520433587073,0 76.65277106,10.76385742863406,0 76.65148597151283,10.76295759998807,0 76.65037666001193,10.76184828848718,0 76.64947683136594,10.7605632,0 76.64881382641293,10.75914138128993,0 76.64840779022289,10.757626033599003,0 76.64827106,10.7560632,0 76.64840779022289,10.754500366400997,0 76.64881382641293,10.752985018710069,0 76.64947683136594,10.7515632,0 76.65037666001193,10.75027811151282,0 76.65148597151283,10.74916880001193,0 76.65277106,10.74826897136594,0 76.65419287871006,10.747605966412927,0 76.655708226401,10.747199930222889,0 76.65727106,10.7470632,0 76.658833893599,10.747199930222889,0 76.66034924128994,10.747605966412927,0 76.66177105999999,10.74826897136594,0 76.66305614848717,10.74916880001193,0 76.66416545998807,10.75027811151282,0 76.66506528863405,10.7515632,0 76.66572829358707,10.752985018710069,0 76.66613432977711,10.754500366400997,0 76.66627106,10.7560632,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 4: R000C046</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 4/16<br/>
+        <b>Cell:</b> R000C046<br/>
+        <b>Learned Importance:</b> 17.000<br/>
+        <b>Weighted Coverage:</b> 3.41<br/>
+        <b>Cells Visible:</b> 9<br/>
+        <b>Total Visits Detectable:</b> 82
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.83562432,10.75157164,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 4</name>
+      <description>1km detection radius for Camera 4</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.84462432,10.75157164,0 76.8444875897771,10.753134473599003,0 76.84408155358706,10.75464982128993,0 76.84341854863405,10.75607164,0 76.84251871998806,10.75735672848718,0 76.84140940848717,10.75846603998807,0 76.84012431999999,10.75936586863406,0 76.83870250128993,10.760028873587073,0 76.83718715359899,10.76043490977711,0 76.83562432,10.76057164,0 76.834061486401,10.76043490977711,0 76.83254613871006,10.760028873587073,0 76.83112432,10.75936586863406,0 76.82983923151282,10.75846603998807,0 76.82872992001192,10.75735672848718,0 76.82783009136594,10.75607164,0 76.82716708641293,10.75464982128993,0 76.82676105022288,10.753134473599003,0 76.82662432,10.75157164,0 76.82676105022288,10.750008806400997,0 76.82716708641293,10.748493458710069,0 76.82783009136594,10.74707164,0 76.82872992001192,10.74578655151282,0 76.82983923151282,10.74467724001193,0 76.83112432,10.74377741136594,0 76.83254613871006,10.743114406412927,0 76.834061486401,10.74270837022289,0 76.83562432,10.74257164,0 76.83718715359899,10.74270837022289,0 76.83870250128993,10.743114406412927,0 76.84012431999999,10.74377741136594,0 76.84140940848717,10.74467724001193,0 76.84251871998806,10.74578655151282,0 76.84341854863405,10.74707164,0 76.84408155358706,10.748493458710069,0 76.8444875897771,10.750008806400997,0 76.84462432,10.75157164,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 5: R002C042</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 5/16<br/>
+        <b>Cell:</b> R002C042<br/>
+        <b>Learned Importance:</b> 2.000<br/>
+        <b>Weighted Coverage:</b> 3.12<br/>
+        <b>Cells Visible:</b> 13<br/>
+        <b>Total Visits Detectable:</b> 81
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.81733166000001,10.76055474,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 5</name>
+      <description>1km detection radius for Camera 5</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.82633166000001,10.76055474,0 76.82619492977712,10.762117573599003,0 76.82578889358707,10.76363292128993,0 76.82512588863406,10.76505474,0 76.82422605998808,10.76633982848718,0 76.82311674848718,10.76744913998807,0 76.82183166,10.76834896863406,0 76.82040984128994,10.769011973587073,0 76.818894493599,10.76941800977711,0 76.81733166000001,10.76955474,0 76.81576882640101,10.76941800977711,0 76.81425347871007,10.769011973587073,0 76.81283166000001,10.76834896863406,0 76.81154657151284,10.76744913998807,0 76.81043726001194,10.76633982848718,0 76.80953743136595,10.76505474,0 76.80887442641294,10.76363292128993,0 76.8084683902229,10.762117573599003,0 76.80833166000001,10.76055474,0 76.8084683902229,10.758991906400997,0 76.80887442641294,10.757476558710069,0 76.80953743136595,10.75605474,0 76.81043726001194,10.75476965151282,0 76.81154657151284,10.75366034001193,0 76.81283166000001,10.75276051136594,0 76.81425347871007,10.752097506412927,0 76.81576882640101,10.75169147022289,0 76.81733166000001,10.75155474,0 76.818894493599,10.75169147022289,0 76.82040984128994,10.752097506412927,0 76.82183166,10.75276051136594,0 76.82311674848718,10.75366034001193,0 76.82422605998808,10.75476965151282,0 76.82512588863406,10.75605474,0 76.82578889358707,10.757476558710069,0 76.82619492977712,10.758991906400997,0 76.82633166000001,10.76055474,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 6: R004C044</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 6/16<br/>
+        <b>Cell:</b> R004C044<br/>
+        <b>Learned Importance:</b> 6.999<br/>
+        <b>Weighted Coverage:</b> 2.92<br/>
+        <b>Cells Visible:</b> 13<br/>
+        <b>Total Visits Detectable:</b> 70
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.82647802,10.7695379,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 6</name>
+      <description>1km detection radius for Camera 6</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.83547802,10.7695379,0 76.8353412897771,10.771100733599003,0 76.83493525358706,10.77261608128993,0 76.83427224863405,10.7740379,0 76.83337241998807,10.77532298848718,0 76.83226310848717,10.77643229998807,0 76.83097801999999,10.77733212863406,0 76.82955620128993,10.777995133587073,0 76.82804085359899,10.77840116977711,0 76.82647802,10.7785379,0 76.824915186401,10.77840116977711,0 76.82339983871006,10.777995133587073,0 76.82197802,10.77733212863406,0 76.82069293151282,10.77643229998807,0 76.81958362001193,10.77532298848718,0 76.81868379136594,10.7740379,0 76.81802078641293,10.77261608128993,0 76.81761475022289,10.771100733599003,0 76.81747802,10.7695379,0 76.81761475022289,10.767975066400997,0 76.81802078641293,10.766459718710069,0 76.81868379136594,10.7650379,0 76.81958362001193,10.76375281151282,0 76.82069293151282,10.76264350001193,0 76.82197802,10.76174367136594,0 76.82339983871006,10.761080666412926,0 76.824915186401,10.760674630222889,0 76.82647802,10.7605379,0 76.82804085359899,10.760674630222889,0 76.82955620128993,10.761080666412926,0 76.83097801999999,10.76174367136594,0 76.83226310848717,10.76264350001193,0 76.83337241998807,10.76375281151282,0 76.83427224863405,10.7650379,0 76.83493525358706,10.766459718710069,0 76.8353412897771,10.767975066400997,0 76.83547802,10.7695379,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 7: R002C001</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 7/16<br/>
+        <b>Cell:</b> R002C001<br/>
+        <b>Learned Importance:</b> 7.000<br/>
+        <b>Weighted Coverage:</b> 3.56<br/>
+        <b>Cells Visible:</b> 12<br/>
+        <b>Total Visits Detectable:</b> 88
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.62983212,10.76055474,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 7</name>
+      <description>1km detection radius for Camera 7</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.63883212,10.76055474,0 76.63869538977711,10.762117573599003,0 76.63828935358707,10.76363292128993,0 76.63762634863406,10.76505474,0 76.63672651998807,10.76633982848718,0 76.63561720848718,10.76744913998807,0 76.63433212,10.76834896863406,0 76.63291030128994,10.769011973587073,0 76.631394953599,10.76941800977711,0 76.62983212,10.76955474,0 76.62826928640101,10.76941800977711,0 76.62675393871007,10.769011973587073,0 76.62533212000001,10.76834896863406,0 76.62404703151283,10.76744913998807,0 76.62293772001193,10.76633982848718,0 76.62203789136595,10.76505474,0 76.62137488641294,10.76363292128993,0 76.6209688502229,10.762117573599003,0 76.62083212,10.76055474,0 76.6209688502229,10.758991906400997,0 76.62137488641294,10.757476558710069,0 76.62203789136595,10.75605474,0 76.62293772001193,10.75476965151282,0 76.62404703151283,10.75366034001193,0 76.62533212000001,10.75276051136594,0 76.62675393871007,10.752097506412927,0 76.62826928640101,10.75169147022289,0 76.62983212,10.75155474,0 76.631394953599,10.75169147022289,0 76.63291030128994,10.752097506412927,0 76.63433212,10.75276051136594,0 76.63561720848718,10.75366034001193,0 76.63672651998807,10.75476965151282,0 76.63762634863406,10.75605474,0 76.63828935358707,10.757476558710069,0 76.63869538977711,10.758991906400997,0 76.63883212,10.76055474,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 8: R004C004</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 8/16<br/>
+        <b>Cell:</b> R004C004<br/>
+        <b>Learned Importance:</b> 8.000<br/>
+        <b>Weighted Coverage:</b> 2.43<br/>
+        <b>Cells Visible:</b> 13<br/>
+        <b>Total Visits Detectable:</b> 58
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.64355155999999,10.7695379,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 8</name>
+      <description>1km detection radius for Camera 8</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.65255155999999,10.7695379,0 76.6524148297771,10.771100733599003,0 76.65200879358706,10.77261608128993,0 76.65134578863405,10.7740379,0 76.65044595998806,10.77532298848718,0 76.64933664848716,10.77643229998807,0 76.64805155999998,10.77733212863406,0 76.64662974128993,10.777995133587073,0 76.64511439359899,10.77840116977711,0 76.64355155999999,10.7785379,0 76.641988726401,10.77840116977711,0 76.64047337871006,10.777995133587073,0 76.63905156,10.77733212863406,0 76.63776647151282,10.77643229998807,0 76.63665716001192,10.77532298848718,0 76.63575733136594,10.7740379,0 76.63509432641293,10.77261608128993,0 76.63468829022288,10.771100733599003,0 76.63455155999999,10.7695379,0 76.63468829022288,10.767975066400997,0 76.63509432641293,10.766459718710069,0 76.63575733136594,10.7650379,0 76.63665716001192,10.76375281151282,0 76.63776647151282,10.76264350001193,0 76.63905156,10.76174367136594,0 76.64047337871006,10.761080666412926,0 76.641988726401,10.760674630222889,0 76.64355155999999,10.7605379,0 76.64511439359899,10.760674630222889,0 76.64662974128993,10.761080666412926,0 76.64805155999998,10.76174367136594,0 76.64933664848716,10.76264350001193,0 76.65044595998806,10.76375281151282,0 76.65134578863405,10.7650379,0 76.65200879358706,10.766459718710069,0 76.6524148297771,10.767975066400997,0 76.65255155999999,10.7695379,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 9: R010C047</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 9/16<br/>
+        <b>Cell:</b> R010C047<br/>
+        <b>Learned Importance:</b> 7.999<br/>
+        <b>Weighted Coverage:</b> 1.41<br/>
+        <b>Cells Visible:</b> 13<br/>
+        <b>Total Visits Detectable:</b> 35
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.84019746,10.796487199999998,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 9</name>
+      <description>1km detection radius for Camera 9</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.84919746,10.796487199999998,0 76.84906072977711,10.798050033599,0 76.84865469358706,10.799565381289929,0 76.84799168863405,10.800987199999998,0 76.84709185998807,10.802272288487178,0 76.84598254848717,10.803381599988068,0 76.84469745999999,10.804281428634058,0 76.84327564128994,10.804944433587071,0 76.841760293599,10.805350469777109,0 76.84019746,10.805487199999998,0 76.838634626401,10.805350469777109,0 76.83711927871006,10.804944433587071,0 76.83569746,10.804281428634058,0 76.83441237151283,10.803381599988068,0 76.83330306001193,10.802272288487178,0 76.83240323136594,10.800987199999998,0 76.83174022641293,10.799565381289929,0 76.83133419022289,10.798050033599,0 76.83119746,10.796487199999998,0 76.83133419022289,10.794924366400995,0 76.83174022641293,10.793409018710067,0 76.83240323136594,10.791987199999998,0 76.83330306001193,10.790702111512818,0 76.83441237151283,10.789592800011928,0 76.83569746,10.788692971365938,0 76.83711927871006,10.788029966412925,0 76.838634626401,10.787623930222887,0 76.84019746,10.787487199999998,0 76.841760293599,10.787623930222887,0 76.84327564128994,10.788029966412925,0 76.84469745999999,10.788692971365938,0 76.84598254848717,10.789592800011928,0 76.84709185998807,10.790702111512818,0 76.84799168863405,10.791987199999998,0 76.84865469358706,10.793409018710067,0 76.84906072977711,10.794924366400995,0 76.84919746,10.796487199999998,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 10: R012C023</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 10/16<br/>
+        <b>Cell:</b> R012C023<br/>
+        <b>Learned Importance:</b> 17.000<br/>
+        <b>Weighted Coverage:</b> 1.11<br/>
+        <b>Cells Visible:</b> 13<br/>
+        <b>Total Visits Detectable:</b> 139
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.73044162,10.80547034,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 10</name>
+      <description>1km detection radius for Camera 10</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.73944162,10.80547034,0 76.7393048897771,10.807033173599002,0 76.73889885358706,10.80854852128993,0 76.73823584863405,10.80997034,0 76.73733601998806,10.81125542848718,0 76.73622670848717,10.81236473998807,0 76.73494161999999,10.81326456863406,0 76.73351980128993,10.813927573587073,0 76.73200445359899,10.81433360977711,0 76.73044162,10.81447034,0 76.728878786401,10.81433360977711,0 76.72736343871006,10.813927573587073,0 76.72594162,10.81326456863406,0 76.72465653151282,10.81236473998807,0 76.72354722001192,10.81125542848718,0 76.72264739136594,10.80997034,0 76.72198438641293,10.80854852128993,0 76.72157835022288,10.807033173599002,0 76.72144162,10.80547034,0 76.72157835022288,10.803907506400996,0 76.72198438641293,10.802392158710068,0 76.72264739136594,10.80097034,0 76.72354722001192,10.79968525151282,0 76.72465653151282,10.79857594001193,0 76.72594162,10.79767611136594,0 76.72736343871006,10.797013106412926,0 76.728878786401,10.796607070222889,0 76.73044162,10.796470339999999,0 76.73200445359899,10.796607070222889,0 76.73351980128993,10.797013106412926,0 76.73494161999999,10.79767611136594,0 76.73622670848717,10.79857594001193,0 76.73733601998806,10.79968525151282,0 76.73823584863405,10.80097034,0 76.73889885358706,10.802392158710068,0 76.7393048897771,10.803907506400996,0 76.73944162,10.80547034,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 11: R000C016</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 11/16<br/>
+        <b>Cell:</b> R000C016<br/>
+        <b>Learned Importance:</b> 2.000<br/>
+        <b>Weighted Coverage:</b> 0.92<br/>
+        <b>Cells Visible:</b> 9<br/>
+        <b>Total Visits Detectable:</b> 22
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.69842952,10.75157164,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 11</name>
+      <description>1km detection radius for Camera 11</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.70742952,10.75157164,0 76.70729278977711,10.753134473599003,0 76.70688675358707,10.75464982128993,0 76.70622374863406,10.75607164,0 76.70532391998807,10.75735672848718,0 76.70421460848718,10.75846603998807,0 76.70292952,10.75936586863406,0 76.70150770128994,10.760028873587073,0 76.699992353599,10.76043490977711,0 76.69842952,10.76057164,0 76.69686668640101,10.76043490977711,0 76.69535133871007,10.760028873587073,0 76.69392952000001,10.75936586863406,0 76.69264443151283,10.75846603998807,0 76.69153512001193,10.75735672848718,0 76.69063529136595,10.75607164,0 76.68997228641294,10.75464982128993,0 76.6895662502229,10.753134473599003,0 76.68942952,10.75157164,0 76.6895662502229,10.750008806400997,0 76.68997228641294,10.748493458710069,0 76.69063529136595,10.74707164,0 76.69153512001193,10.74578655151282,0 76.69264443151283,10.74467724001193,0 76.69392952000001,10.74377741136594,0 76.69535133871007,10.743114406412927,0 76.69686668640101,10.74270837022289,0 76.69842952,10.74257164,0 76.699992353599,10.74270837022289,0 76.70150770128994,10.743114406412927,0 76.70292952,10.74377741136594,0 76.70421460848718,10.74467724001193,0 76.70532391998807,10.74578655151282,0 76.70622374863406,10.74707164,0 76.70688675358707,10.748493458710069,0 76.70729278977711,10.750008806400997,0 76.70742952,10.75157164,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 12: R001C049</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 12/16<br/>
+        <b>Cell:</b> R001C049<br/>
+        <b>Learned Importance:</b> 1.000<br/>
+        <b>Weighted Coverage:</b> 1.59<br/>
+        <b>Cells Visible:</b> 11<br/>
+        <b>Total Visits Detectable:</b> 38
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.84934382,10.7560632,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 12</name>
+      <description>1km detection radius for Camera 12</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.85834382,10.7560632,0 76.85820708977711,10.757626033599003,0 76.85780105358707,10.75914138128993,0 76.85713804863406,10.7605632,0 76.85623821998807,10.76184828848718,0 76.85512890848717,10.76295759998807,0 76.85384382,10.76385742863406,0 76.85242200128994,10.764520433587073,0 76.850906653599,10.76492646977711,0 76.84934382,10.7650632,0 76.847780986401,10.76492646977711,0 76.84626563871007,10.764520433587073,0 76.84484382000001,10.76385742863406,0 76.84355873151283,10.76295759998807,0 76.84244942001193,10.76184828848718,0 76.84154959136595,10.7605632,0 76.84088658641294,10.75914138128993,0 76.84048055022289,10.757626033599003,0 76.84034382,10.7560632,0 76.84048055022289,10.754500366400997,0 76.84088658641294,10.752985018710069,0 76.84154959136595,10.7515632,0 76.84244942001193,10.75027811151282,0 76.84355873151283,10.74916880001193,0 76.84484382000001,10.74826897136594,0 76.84626563871007,10.747605966412927,0 76.847780986401,10.747199930222889,0 76.84934382,10.7470632,0 76.850906653599,10.747199930222889,0 76.85242200128994,10.747605966412927,0 76.85384382,10.74826897136594,0 76.85512890848717,10.74916880001193,0 76.85623821998807,10.75027811151282,0 76.85713804863406,10.7515632,0 76.85780105358707,10.752985018710069,0 76.85820708977711,10.754500366400997,0 76.85834382,10.7560632,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 13: R008C050</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 13/16<br/>
+        <b>Cell:</b> R008C050<br/>
+        <b>Learned Importance:</b> 2.000<br/>
+        <b>Weighted Coverage:</b> 0.92<br/>
+        <b>Cells Visible:</b> 9<br/>
+        <b>Total Visits Detectable:</b> 22
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.85391695999999,10.7875041,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 13</name>
+      <description>1km detection radius for Camera 13</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.86291695999999,10.7875041,0 76.8627802297771,10.789066933599003,0 76.86237419358706,10.79058228128993,0 76.86171118863405,10.7920041,0 76.86081135998806,10.79328918848718,0 76.85970204848716,10.79439849998807,0 76.85841695999999,10.79529832863406,0 76.85699514128993,10.795961333587073,0 76.85547979359899,10.79636736977711,0 76.85391695999999,10.7965041,0 76.852354126401,10.79636736977711,0 76.85083877871006,10.795961333587073,0 76.84941696,10.79529832863406,0 76.84813187151282,10.79439849998807,0 76.84702256001192,10.79328918848718,0 76.84612273136594,10.7920041,0 76.84545972641293,10.79058228128993,0 76.84505369022288,10.789066933599003,0 76.84491695999999,10.7875041,0 76.84505369022288,10.785941266400997,0 76.84545972641293,10.784425918710069,0 76.84612273136594,10.7830041,0 76.84702256001192,10.78171901151282,0 76.84813187151282,10.78060970001193,0 76.84941696,10.77970987136594,0 76.85083877871006,10.779046866412926,0 76.852354126401,10.778640830222889,0 76.85391695999999,10.7785041,0 76.85547979359899,10.778640830222889,0 76.85699514128993,10.779046866412926,0 76.85841695999999,10.77970987136594,0 76.85970204848716,10.78060970001193,0 76.86081135998806,10.78171901151282,0 76.86171118863405,10.7830041,0 76.86237419358706,10.784425918710069,0 76.8627802297771,10.785941266400997,0 76.86291695999999,10.7875041,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 14: R010C026</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 14/16<br/>
+        <b>Cell:</b> R010C026<br/>
+        <b>Learned Importance:</b> 4.000<br/>
+        <b>Weighted Coverage:</b> 0.79<br/>
+        <b>Cells Visible:</b> 13<br/>
+        <b>Total Visits Detectable:</b> 113
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.74416112,10.796487199999998,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 14</name>
+      <description>1km detection radius for Camera 14</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.75316112,10.796487199999998,0 76.75302438977711,10.798050033599,0 76.75261835358707,10.799565381289929,0 76.75195534863406,10.800987199999998,0 76.75105551998807,10.802272288487178,0 76.74994620848717,10.803381599988068,0 76.74866112,10.804281428634058,0 76.74723930128994,10.804944433587071,0 76.745723953599,10.805350469777109,0 76.74416112,10.805487199999998,0 76.742598286401,10.805350469777109,0 76.74108293871006,10.804944433587071,0 76.73966112000001,10.804281428634058,0 76.73837603151283,10.803381599988068,0 76.73726672001193,10.802272288487178,0 76.73636689136595,10.800987199999998,0 76.73570388641294,10.799565381289929,0 76.73529785022289,10.798050033599,0 76.73516112,10.796487199999998,0 76.73529785022289,10.794924366400995,0 76.73570388641294,10.793409018710067,0 76.73636689136595,10.791987199999998,0 76.73726672001193,10.790702111512818,0 76.73837603151283,10.789592800011928,0 76.73966112000001,10.788692971365938,0 76.74108293871006,10.788029966412925,0 76.742598286401,10.787623930222887,0 76.74416112,10.787487199999998,0 76.745723953599,10.787623930222887,0 76.74723930128994,10.788029966412925,0 76.74866112,10.788692971365938,0 76.74994620848717,10.789592800011928,0 76.75105551998807,10.790702111512818,0 76.75195534863406,10.791987199999998,0 76.75261835358707,10.793409018710067,0 76.75302438977711,10.794924366400995,0 76.75316112,10.796487199999998,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 15: R007C045</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 15/16<br/>
+        <b>Cell:</b> R007C045<br/>
+        <b>Learned Importance:</b> 6.000<br/>
+        <b>Weighted Coverage:</b> 2.87<br/>
+        <b>Cells Visible:</b> 13<br/>
+        <b>Total Visits Detectable:</b> 81
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.83105115999999,10.783012539999998,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 15</name>
+      <description>1km detection radius for Camera 15</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.84005115999999,10.783012539999998,0 76.8399144297771,10.784575373599,0 76.83950839358705,10.786090721289929,0 76.83884538863404,10.787512539999998,0 76.83794555998806,10.788797628487178,0 76.83683624848716,10.789906939988068,0 76.83555115999998,10.790806768634058,0 76.83412934128992,10.791469773587071,0 76.83261399359898,10.791875809777109,0 76.83105115999999,10.792012539999998,0 76.82948832640099,10.791875809777109,0 76.82797297871005,10.791469773587071,0 76.82655116,10.790806768634058,0 76.82526607151281,10.789906939988068,0 76.82415676001192,10.788797628487178,0 76.82325693136593,10.787512539999998,0 76.82259392641292,10.786090721289929,0 76.82218789022288,10.784575373599,0 76.82205115999999,10.783012539999998,0 76.82218789022288,10.781449706400995,0 76.82259392641292,10.779934358710067,0 76.82325693136593,10.778512539999998,0 76.82415676001192,10.777227451512818,0 76.82526607151281,10.776118140011928,0 76.82655116,10.775218311365938,0 76.82797297871005,10.774555306412925,0 76.82948832640099,10.774149270222887,0 76.83105115999999,10.774012539999998,0 76.83261399359898,10.774149270222887,0 76.83412934128992,10.774555306412925,0 76.83555115999998,10.775218311365938,0 76.83683624848716,10.776118140011928,0 76.83794555998806,10.777227451512818,0 76.83884538863404,10.778512539999998,0 76.83950839358705,10.779934358710067,0 76.8399144297771,10.781449706400995,0 76.84005115999999,10.783012539999998,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 16: R000C011</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 16/16<br/>
+        <b>Cell:</b> R000C011<br/>
+        <b>Learned Importance:</b> 0.000<br/>
+        <b>Weighted Coverage:</b> 0.62<br/>
+        <b>Cells Visible:</b> 9<br/>
+        <b>Total Visits Detectable:</b> 15
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.67556371999999,10.75157164,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Detection Zone 16</name>
+      <description>1km detection radius for Camera 16</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.68456371999999,10.75157164,0 76.6844269897771,10.753134473599003,0 76.68402095358705,10.75464982128993,0 76.68335794863404,10.75607164,0 76.68245811998806,10.75735672848718,0 76.68134880848716,10.75846603998807,0 76.68006371999998,10.75936586863406,0 76.67864190128992,10.760028873587073,0 76.67712655359898,10.76043490977711,0 76.67556371999999,10.76057164,0 76.67400088640099,10.76043490977711,0 76.67248553871005,10.760028873587073,0 76.67106371999999,10.75936586863406,0 76.66977863151281,10.75846603998807,0 76.66866932001192,10.75735672848718,0 76.66776949136593,10.75607164,0 76.66710648641292,10.75464982128993,0 76.66670045022288,10.753134473599003,0 76.66656371999998,10.75157164,0 76.66670045022288,10.750008806400997,0 76.66710648641292,10.748493458710069,0 76.66776949136593,10.74707164,0 76.66866932001192,10.74578655151282,0 76.66977863151281,10.74467724001193,0 76.67106371999999,10.74377741136594,0 76.67248553871005,10.743114406412927,0 76.67400088640099,10.74270837022289,0 76.67556371999999,10.74257164,0 76.67712655359898,10.74270837022289,0 76.67864190128992,10.743114406412927,0 76.68006371999998,10.74377741136594,0 76.68134880848716,10.74467724001193,0 76.68245811998806,10.74578655151282,0 76.68335794863404,10.74707164,0 76.68402095358705,10.748493458710069,0 76.6844269897771,10.750008806400997,0 76.68456371999999,10.75157164,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+  </Folder>
+</Document>
+</kml>

@@ -1,0 +1,11 @@
+CAMERA SPECIFICATIONS
+================================================================================
+
+Detection Zone: 1km diameter (500m radius) around camera
+Occlusion: Forest (80%), Water (90%), Settlements (70%), Crops (30%)
+Placement Range: Up to 20km apart
+FOV: 360° (fixed, no pan/tilt)
+Cameras: 16
+Geographic Coverage: 18.2%
+Demand Coverage: 53.4%
+Average cells per camera: 4.5

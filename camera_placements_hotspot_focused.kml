@@ -1,0 +1,4034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Walayar Elephant Hotspot Camera Placement</name>
+  <description>16 Cameras Optimized for Elephant Collision/Congregation Zones</description>
+  
+  <Style id="cameraIcon">
+    <IconStyle>
+      <Icon><href>http://maps.google.com/mapfiles/kml/shapes/camera.png</href></Icon>
+      <scale>1.2</scale>
+    </IconStyle>
+    <LabelStyle><scale>1.0</scale></LabelStyle>
+  </Style>
+  
+  <Style id="detectionZone">
+    <PolyStyle><fill>1</fill><outline>1</outline><color>7700FF00</color></PolyStyle>
+    <LineStyle><color>FF00FF00</color><width>2</width></LineStyle>
+  </Style>
+  
+  <Style id="tier1Hotspot">
+    <PolyStyle><fill>1</fill><outline>1</outline><color>66FF0000</color></PolyStyle>
+    <LineStyle><color>FFFF0000</color><width>1</width></LineStyle>
+  </Style>
+  
+  <Style id="tier2Hotspot">
+    <PolyStyle><fill>1</fill><outline>1</outline><color>66FFAA00</color></PolyStyle>
+    <LineStyle><color>FFFFAA00</color><width>1</width></LineStyle>
+  </Style>
+  
+  <Folder>
+    <name>Hotspot Zones (Elephant Congregation Areas)</name>
+    <description>Red = TIER 1 (Critical, 8+ visits) | Orange = TIER 2 (High, 3-8 visits)</description>
+
+    <Placemark>
+      <name>T1-R000C000</name>
+      <description>TIER 1 HOTSPOT: 9 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.62300892,10.74932164,0
+              76.62750892000001,10.74932164,0
+              76.62750892000001,10.75382164,0
+              76.62300892,10.75382164,0
+              76.62300892,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R000C003</name>
+      <description>TIER 1 HOTSPOT: 16 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.63672842,10.74932164,0
+              76.64122842,10.74932164,0
+              76.64122842,10.75382164,0
+              76.63672842,10.75382164,0
+              76.63672842,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R000C004</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.64130155999999,10.74932164,0
+              76.64580156,10.74932164,0
+              76.64580156,10.75382164,0
+              76.64130155999999,10.75382164,0
+              76.64130155999999,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R000C007</name>
+      <description>TIER 1 HOTSPOT: 17 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65502106,10.74932164,0
+              76.65952106,10.74932164,0
+              76.65952106,10.75382164,0
+              76.65502106,10.75382164,0
+              76.65502106,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R000C014</name>
+      <description>TIER 1 HOTSPOT: 10 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.68703322,10.74932164,0
+              76.69153322000001,10.74932164,0
+              76.69153322000001,10.75382164,0
+              76.68703322,10.75382164,0
+              76.68703322,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R000C042</name>
+      <description>TIER 1 HOTSPOT: 15 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81508166,10.74932164,0
+              76.81958166000001,10.74932164,0
+              76.81958166000001,10.75382164,0
+              76.81508166,10.75382164,0
+              76.81508166,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R000C045</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82880115999998,10.74932164,0
+              76.83330115999999,10.74932164,0
+              76.83330115999999,10.75382164,0
+              76.82880115999998,10.75382164,0
+              76.82880115999998,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R000C046</name>
+      <description>TIER 1 HOTSPOT: 17 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83337431999999,10.74932164,0
+              76.83787432,10.74932164,0
+              76.83787432,10.75382164,0
+              76.83337431999999,10.75382164,0
+              76.83337431999999,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R000C047</name>
+      <description>TIER 1 HOTSPOT: 17 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83794746,10.74932164,0
+              76.84244746,10.74932164,0
+              76.84244746,10.75382164,0
+              76.83794746,10.75382164,0
+              76.83794746,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R000C048</name>
+      <description>TIER 1 HOTSPOT: 13 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.84252062,10.74932164,0
+              76.84702062000001,10.74932164,0
+              76.84702062000001,10.75382164,0
+              76.84252062,10.75382164,0
+              76.84252062,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R001C002</name>
+      <description>TIER 1 HOTSPOT: 16 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.63215525999999,10.7538132,0
+              76.63665526,10.7538132,0
+              76.63665526,10.7583132,0
+              76.63215525999999,10.7583132,0
+              76.63215525999999,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R001C006</name>
+      <description>TIER 1 HOTSPOT: 12 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65044792,10.7538132,0
+              76.65494792000001,10.7538132,0
+              76.65494792000001,10.7583132,0
+              76.65044792,10.7583132,0
+              76.65044792,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R001C007</name>
+      <description>TIER 1 HOTSPOT: 16 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65502106,10.7538132,0
+              76.65952106,10.7538132,0
+              76.65952106,10.7583132,0
+              76.65502106,10.7583132,0
+              76.65502106,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R001C008</name>
+      <description>TIER 1 HOTSPOT: 15 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65959422,10.7538132,0
+              76.66409422000001,10.7538132,0
+              76.66409422000001,10.7583132,0
+              76.65959422,10.7583132,0
+              76.65959422,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R001C009</name>
+      <description>TIER 1 HOTSPOT: 14 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.66416741999998,10.7538132,0
+              76.66866741999999,10.7538132,0
+              76.66866741999999,10.7583132,0
+              76.66416741999998,10.7583132,0
+              76.66416741999998,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R001C042</name>
+      <description>TIER 1 HOTSPOT: 11 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81508166,10.7538132,0
+              76.81958166000001,10.7538132,0
+              76.81958166000001,10.7583132,0
+              76.81508166,10.7583132,0
+              76.81508166,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R001C046</name>
+      <description>TIER 1 HOTSPOT: 11 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83337431999999,10.7538132,0
+              76.83787432,10.7538132,0
+              76.83787432,10.7583132,0
+              76.83337431999999,10.7583132,0
+              76.83337431999999,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R002C002</name>
+      <description>TIER 1 HOTSPOT: 11 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.63215525999999,10.75830474,0
+              76.63665526,10.75830474,0
+              76.63665526,10.76280474,0
+              76.63215525999999,10.76280474,0
+              76.63215525999999,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R002C003</name>
+      <description>TIER 1 HOTSPOT: 17 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.63672842,10.75830474,0
+              76.64122842,10.75830474,0
+              76.64122842,10.76280474,0
+              76.63672842,10.76280474,0
+              76.63672842,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R002C004</name>
+      <description>TIER 1 HOTSPOT: 13 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.64130155999999,10.75830474,0
+              76.64580156,10.75830474,0
+              76.64580156,10.76280474,0
+              76.64130155999999,10.76280474,0
+              76.64130155999999,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R002C006</name>
+      <description>TIER 1 HOTSPOT: 11 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65044792,10.75830474,0
+              76.65494792000001,10.75830474,0
+              76.65494792000001,10.76280474,0
+              76.65044792,10.76280474,0
+              76.65044792,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R002C043</name>
+      <description>TIER 1 HOTSPOT: 12 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81965482,10.75830474,0
+              76.82415482,10.75830474,0
+              76.82415482,10.76280474,0
+              76.81965482,10.76280474,0
+              76.81965482,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R002C044</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82422801999999,10.75830474,0
+              76.82872802,10.75830474,0
+              76.82872802,10.76280474,0
+              76.82422801999999,10.76280474,0
+              76.82422801999999,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R003C001</name>
+      <description>TIER 1 HOTSPOT: 14 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.62758212,10.76279634,0
+              76.63208212,10.76279634,0
+              76.63208212,10.76729634,0
+              76.62758212,10.76729634,0
+              76.62758212,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R003C004</name>
+      <description>TIER 1 HOTSPOT: 12 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.64130155999999,10.76279634,0
+              76.64580156,10.76279634,0
+              76.64580156,10.76729634,0
+              76.64130155999999,10.76729634,0
+              76.64130155999999,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R003C005</name>
+      <description>TIER 1 HOTSPOT: 9 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.64587472,10.76279634,0
+              76.65037472,10.76279634,0
+              76.65037472,10.76729634,0
+              76.64587472,10.76729634,0
+              76.64587472,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R003C041</name>
+      <description>TIER 1 HOTSPOT: 9 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81050852,10.76279634,0
+              76.81500852,10.76279634,0
+              76.81500852,10.76729634,0
+              76.81050852,10.76729634,0
+              76.81050852,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R003C044</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82422801999999,10.76279634,0
+              76.82872802,10.76279634,0
+              76.82872802,10.76729634,0
+              76.82422801999999,10.76729634,0
+              76.82422801999999,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R004C001</name>
+      <description>TIER 1 HOTSPOT: 9 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.62758212,10.7672879,0
+              76.63208212,10.7672879,0
+              76.63208212,10.7717879,0
+              76.62758212,10.7717879,0
+              76.62758212,10.7672879,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R004C004</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.64130155999999,10.7672879,0
+              76.64580156,10.7672879,0
+              76.64580156,10.7717879,0
+              76.64130155999999,10.7717879,0
+              76.64130155999999,10.7672879,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R004C040</name>
+      <description>TIER 1 HOTSPOT: 12 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.80593536,10.7672879,0
+              76.81043536000001,10.7672879,0
+              76.81043536000001,10.7717879,0
+              76.80593536,10.7717879,0
+              76.80593536,10.7672879,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R005C045</name>
+      <description>TIER 1 HOTSPOT: 9 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82880115999998,10.77177944,0
+              76.83330115999999,10.77177944,0
+              76.83330115999999,10.77627944,0
+              76.82880115999998,10.77627944,0
+              76.82880115999998,10.77177944,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R005C046</name>
+      <description>TIER 1 HOTSPOT: 15 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83337431999999,10.77177944,0
+              76.83787432,10.77177944,0
+              76.83787432,10.77627944,0
+              76.83337431999999,10.77627944,0
+              76.83337431999999,10.77177944,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R005C048</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.84252062,10.77177944,0
+              76.84702062000001,10.77177944,0
+              76.84702062000001,10.77627944,0
+              76.84252062,10.77627944,0
+              76.84252062,10.77177944,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R006C045</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82880115999998,10.776271,0
+              76.83330115999999,10.776271,0
+              76.83330115999999,10.780771,0
+              76.82880115999998,10.780771,0
+              76.82880115999998,10.776271,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R006C046</name>
+      <description>TIER 1 HOTSPOT: 13 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83337431999999,10.776271,0
+              76.83787432,10.776271,0
+              76.83787432,10.780771,0
+              76.83337431999999,10.780771,0
+              76.83337431999999,10.776271,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R006C047</name>
+      <description>TIER 1 HOTSPOT: 9 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83794746,10.776271,0
+              76.84244746,10.776271,0
+              76.84244746,10.780771,0
+              76.83794746,10.780771,0
+              76.83794746,10.776271,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R006C048</name>
+      <description>TIER 1 HOTSPOT: 9 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.84252062,10.776271,0
+              76.84702062000001,10.776271,0
+              76.84702062000001,10.780771,0
+              76.84252062,10.780771,0
+              76.84252062,10.776271,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R006C049</name>
+      <description>TIER 1 HOTSPOT: 11 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.84709382,10.776271,0
+              76.85159382,10.776271,0
+              76.85159382,10.780771,0
+              76.84709382,10.780771,0
+              76.84709382,10.776271,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R006C050</name>
+      <description>TIER 1 HOTSPOT: 12 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.85166695999999,10.776271,0
+              76.85616696,10.776271,0
+              76.85616696,10.780771,0
+              76.85166695999999,10.780771,0
+              76.85166695999999,10.776271,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R007C046</name>
+      <description>TIER 1 HOTSPOT: 10 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83337431999999,10.780762539999998,0
+              76.83787432,10.780762539999998,0
+              76.83787432,10.785262539999998,0
+              76.83337431999999,10.785262539999998,0
+              76.83337431999999,10.780762539999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R008C025</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73733795999999,10.7852541,0
+              76.74183796,10.7852541,0
+              76.74183796,10.7897541,0
+              76.73733795999999,10.7897541,0
+              76.73733795999999,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R008C027</name>
+      <description>TIER 1 HOTSPOT: 13 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74648425999999,10.7852541,0
+              76.75098426,10.7852541,0
+              76.75098426,10.7897541,0
+              76.74648425999999,10.7897541,0
+              76.74648425999999,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R008C028</name>
+      <description>TIER 1 HOTSPOT: 13 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.75105742,10.7852541,0
+              76.75555742,10.7852541,0
+              76.75555742,10.7897541,0
+              76.75105742,10.7897541,0
+              76.75105742,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R008C029</name>
+      <description>TIER 1 HOTSPOT: 13 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.75563062,10.7852541,0
+              76.76013062000001,10.7852541,0
+              76.76013062000001,10.7897541,0
+              76.75563062,10.7897541,0
+              76.75563062,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R009C025</name>
+      <description>TIER 1 HOTSPOT: 15 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73733795999999,10.78974564,0
+              76.74183796,10.78974564,0
+              76.74183796,10.79424564,0
+              76.73733795999999,10.79424564,0
+              76.73733795999999,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R009C027</name>
+      <description>TIER 1 HOTSPOT: 17 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74648425999999,10.78974564,0
+              76.75098426,10.78974564,0
+              76.75098426,10.79424564,0
+              76.74648425999999,10.79424564,0
+              76.74648425999999,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R009C029</name>
+      <description>TIER 1 HOTSPOT: 9 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.75563062,10.78974564,0
+              76.76013062000001,10.78974564,0
+              76.76013062000001,10.79424564,0
+              76.75563062,10.79424564,0
+              76.75563062,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R010C025</name>
+      <description>TIER 1 HOTSPOT: 16 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73733795999999,10.794237199999998,0
+              76.74183796,10.794237199999998,0
+              76.74183796,10.798737199999998,0
+              76.73733795999999,10.798737199999998,0
+              76.73733795999999,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R010C027</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74648425999999,10.794237199999998,0
+              76.75098426,10.794237199999998,0
+              76.75098426,10.798737199999998,0
+              76.74648425999999,10.798737199999998,0
+              76.74648425999999,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R010C028</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.75105742,10.794237199999998,0
+              76.75555742,10.794237199999998,0
+              76.75555742,10.798737199999998,0
+              76.75105742,10.798737199999998,0
+              76.75105742,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R010C047</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83794746,10.794237199999998,0
+              76.84244746,10.794237199999998,0
+              76.84244746,10.798737199999998,0
+              76.83794746,10.798737199999998,0
+              76.83794746,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R011C022</name>
+      <description>TIER 1 HOTSPOT: 11 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72361845999998,10.79872874,0
+              76.72811845999999,10.79872874,0
+              76.72811845999999,10.80322874,0
+              76.72361845999998,10.80322874,0
+              76.72361845999998,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R011C023</name>
+      <description>TIER 1 HOTSPOT: 12 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72819161999999,10.79872874,0
+              76.73269162,10.79872874,0
+              76.73269162,10.80322874,0
+              76.72819161999999,10.80322874,0
+              76.72819161999999,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R011C024</name>
+      <description>TIER 1 HOTSPOT: 15 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73276482,10.79872874,0
+              76.73726482000001,10.79872874,0
+              76.73726482000001,10.80322874,0
+              76.73276482,10.80322874,0
+              76.73276482,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R012C022</name>
+      <description>TIER 1 HOTSPOT: 24 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72361845999998,10.80322034,0
+              76.72811845999999,10.80322034,0
+              76.72811845999999,10.80772034,0
+              76.72361845999998,10.80772034,0
+              76.72361845999998,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R012C023</name>
+      <description>TIER 1 HOTSPOT: 17 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72819161999999,10.80322034,0
+              76.73269162,10.80322034,0
+              76.73269162,10.80772034,0
+              76.72819161999999,10.80772034,0
+              76.72819161999999,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R012C024</name>
+      <description>TIER 1 HOTSPOT: 15 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73276482,10.80322034,0
+              76.73726482000001,10.80322034,0
+              76.73726482000001,10.80772034,0
+              76.73276482,10.80772034,0
+              76.73276482,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R012C025</name>
+      <description>TIER 1 HOTSPOT: 11 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73733795999999,10.80322034,0
+              76.74183796,10.80322034,0
+              76.74183796,10.80772034,0
+              76.73733795999999,10.80772034,0
+              76.73733795999999,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R012C026</name>
+      <description>TIER 1 HOTSPOT: 17 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74191112,10.80322034,0
+              76.74641112,10.80322034,0
+              76.74641112,10.80772034,0
+              76.74191112,10.80772034,0
+              76.74191112,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R012C027</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74648425999999,10.80322034,0
+              76.75098426,10.80322034,0
+              76.75098426,10.80772034,0
+              76.74648425999999,10.80772034,0
+              76.74648425999999,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R012C028</name>
+      <description>TIER 1 HOTSPOT: 12 visits | 2 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.75105742,10.80322034,0
+              76.75555742,10.80322034,0
+              76.75555742,10.80772034,0
+              76.75105742,10.80772034,0
+              76.75105742,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R013C023</name>
+      <description>TIER 1 HOTSPOT: 13 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72819161999999,10.8077119,0
+              76.73269162,10.8077119,0
+              76.73269162,10.8122119,0
+              76.72819161999999,10.8122119,0
+              76.72819161999999,10.8077119,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R013C024</name>
+      <description>TIER 1 HOTSPOT: 9 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73276482,10.8077119,0
+              76.73726482000001,10.8077119,0
+              76.73726482000001,10.8122119,0
+              76.73276482,10.8122119,0
+              76.73276482,10.8077119,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R015C019</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.70989902,10.816695,0
+              76.71439902,10.816695,0
+              76.71439902,10.821195,0
+              76.70989902,10.821195,0
+              76.70989902,10.816695,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T1-R016C017</name>
+      <description>TIER 1 HOTSPOT: 8 visits | 1 trajectories</description>
+      <styleUrl>#tier1Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.70075266,10.82118654,0
+              76.70525266000001,10.82118654,0
+              76.70525266000001,10.82568654,0
+              76.70075266,10.82568654,0
+              76.70075266,10.82118654,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C001</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.62758212,10.74932164,0
+              76.63208212,10.74932164,0
+              76.63208212,10.75382164,0
+              76.62758212,10.75382164,0
+              76.62758212,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C002</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.63215525999999,10.74932164,0
+              76.63665526,10.74932164,0
+              76.63665526,10.75382164,0
+              76.63215525999999,10.75382164,0
+              76.63215525999999,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C005</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.64587472,10.74932164,0
+              76.65037472,10.74932164,0
+              76.65037472,10.75382164,0
+              76.64587472,10.75382164,0
+              76.64587472,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C006</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65044792,10.74932164,0
+              76.65494792000001,10.74932164,0
+              76.65494792000001,10.75382164,0
+              76.65044792,10.75382164,0
+              76.65044792,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C008</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65959422,10.74932164,0
+              76.66409422000001,10.74932164,0
+              76.66409422000001,10.75382164,0
+              76.65959422,10.75382164,0
+              76.65959422,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C013</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.68246002,10.74932164,0
+              76.68696002,10.74932164,0
+              76.68696002,10.75382164,0
+              76.68246002,10.75382164,0
+              76.68246002,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C018</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.70532582,10.74932164,0
+              76.70982582,10.74932164,0
+              76.70982582,10.75382164,0
+              76.70532582,10.75382164,0
+              76.70532582,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C019</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.70989902,10.74932164,0
+              76.71439902,10.74932164,0
+              76.71439902,10.75382164,0
+              76.70989902,10.75382164,0
+              76.70989902,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C020</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.71447215999999,10.74932164,0
+              76.71897215999999,10.74932164,0
+              76.71897215999999,10.75382164,0
+              76.71447215999999,10.75382164,0
+              76.71447215999999,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C021</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.71904531999999,10.74932164,0
+              76.72354532,10.74932164,0
+              76.72354532,10.75382164,0
+              76.71904531999999,10.75382164,0
+              76.71904531999999,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C041</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81050852,10.74932164,0
+              76.81500852,10.74932164,0
+              76.81500852,10.75382164,0
+              76.81050852,10.75382164,0
+              76.81050852,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C043</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81965482,10.74932164,0
+              76.82415482,10.74932164,0
+              76.82415482,10.75382164,0
+              76.81965482,10.75382164,0
+              76.81965482,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C044</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82422801999999,10.74932164,0
+              76.82872802,10.74932164,0
+              76.82872802,10.75382164,0
+              76.82422801999999,10.75382164,0
+              76.82422801999999,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C049</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.84709382,10.74932164,0
+              76.85159382,10.74932164,0
+              76.85159382,10.75382164,0
+              76.84709382,10.75382164,0
+              76.84709382,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R000C050</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.85166695999999,10.74932164,0
+              76.85616696,10.74932164,0
+              76.85616696,10.75382164,0
+              76.85166695999999,10.75382164,0
+              76.85166695999999,10.74932164,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R001C001</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.62758212,10.7538132,0
+              76.63208212,10.7538132,0
+              76.63208212,10.7583132,0
+              76.62758212,10.7583132,0
+              76.62758212,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R001C003</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.63672842,10.7538132,0
+              76.64122842,10.7538132,0
+              76.64122842,10.7583132,0
+              76.63672842,10.7583132,0
+              76.63672842,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R001C004</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.64130155999999,10.7538132,0
+              76.64580156,10.7538132,0
+              76.64580156,10.7583132,0
+              76.64130155999999,10.7583132,0
+              76.64130155999999,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R001C005</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.64587472,10.7538132,0
+              76.65037472,10.7538132,0
+              76.65037472,10.7583132,0
+              76.64587472,10.7583132,0
+              76.64587472,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R001C010</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.66874055999999,10.7538132,0
+              76.67324056,10.7538132,0
+              76.67324056,10.7583132,0
+              76.66874055999999,10.7583132,0
+              76.66874055999999,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R001C041</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81050852,10.7538132,0
+              76.81500852,10.7538132,0
+              76.81500852,10.7583132,0
+              76.81050852,10.7583132,0
+              76.81050852,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R001C043</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81965482,10.7538132,0
+              76.82415482,10.7538132,0
+              76.82415482,10.7583132,0
+              76.81965482,10.7583132,0
+              76.81965482,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R001C044</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82422801999999,10.7538132,0
+              76.82872802,10.7538132,0
+              76.82872802,10.7583132,0
+              76.82422801999999,10.7583132,0
+              76.82422801999999,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R001C045</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82880115999998,10.7538132,0
+              76.83330115999999,10.7538132,0
+              76.83330115999999,10.7583132,0
+              76.82880115999998,10.7583132,0
+              76.82880115999998,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R001C047</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83794746,10.7538132,0
+              76.84244746,10.7538132,0
+              76.84244746,10.7583132,0
+              76.83794746,10.7583132,0
+              76.83794746,10.7538132,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R002C001</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.62758212,10.75830474,0
+              76.63208212,10.75830474,0
+              76.63208212,10.76280474,0
+              76.62758212,10.76280474,0
+              76.62758212,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R002C005</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.64587472,10.75830474,0
+              76.65037472,10.75830474,0
+              76.65037472,10.76280474,0
+              76.64587472,10.76280474,0
+              76.64587472,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R002C007</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65502106,10.75830474,0
+              76.65952106,10.75830474,0
+              76.65952106,10.76280474,0
+              76.65502106,10.76280474,0
+              76.65502106,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R002C041</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81050852,10.75830474,0
+              76.81500852,10.75830474,0
+              76.81500852,10.76280474,0
+              76.81050852,10.76280474,0
+              76.81050852,10.75830474,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R003C002</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.63215525999999,10.76279634,0
+              76.63665526,10.76279634,0
+              76.63665526,10.76729634,0
+              76.63215525999999,10.76729634,0
+              76.63215525999999,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R003C007</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65502106,10.76279634,0
+              76.65952106,10.76279634,0
+              76.65952106,10.76729634,0
+              76.65502106,10.76729634,0
+              76.65502106,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R003C008</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65959422,10.76279634,0
+              76.66409422000001,10.76279634,0
+              76.66409422000001,10.76729634,0
+              76.65959422,10.76729634,0
+              76.65959422,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R003C040</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.80593536,10.76279634,0
+              76.81043536000001,10.76279634,0
+              76.81043536000001,10.76729634,0
+              76.80593536,10.76729634,0
+              76.80593536,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R003C042</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81508166,10.76279634,0
+              76.81958166000001,10.76279634,0
+              76.81958166000001,10.76729634,0
+              76.81508166,10.76729634,0
+              76.81508166,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R003C045</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82880115999998,10.76279634,0
+              76.83330115999999,10.76279634,0
+              76.83330115999999,10.76729634,0
+              76.82880115999998,10.76729634,0
+              76.82880115999998,10.76279634,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R004C003</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.63672842,10.7672879,0
+              76.64122842,10.7672879,0
+              76.64122842,10.7717879,0
+              76.63672842,10.7717879,0
+              76.63672842,10.7672879,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R004C005</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.64587472,10.7672879,0
+              76.65037472,10.7672879,0
+              76.65037472,10.7717879,0
+              76.64587472,10.7717879,0
+              76.64587472,10.7672879,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R004C006</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.65044792,10.7672879,0
+              76.65494792000001,10.7672879,0
+              76.65494792000001,10.7717879,0
+              76.65044792,10.7717879,0
+              76.65044792,10.7672879,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R004C042</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81508166,10.7672879,0
+              76.81958166000001,10.7672879,0
+              76.81958166000001,10.7717879,0
+              76.81508166,10.7717879,0
+              76.81508166,10.7672879,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R004C043</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81965482,10.7672879,0
+              76.82415482,10.7672879,0
+              76.82415482,10.7717879,0
+              76.81965482,10.7717879,0
+              76.81965482,10.7672879,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R004C044</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82422801999999,10.7672879,0
+              76.82872802,10.7672879,0
+              76.82872802,10.7717879,0
+              76.82422801999999,10.7717879,0
+              76.82422801999999,10.7672879,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R004C045</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82880115999998,10.7672879,0
+              76.83330115999999,10.7672879,0
+              76.83330115999999,10.7717879,0
+              76.82880115999998,10.7717879,0
+              76.82880115999998,10.7672879,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R004C046</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83337431999999,10.7672879,0
+              76.83787432,10.7672879,0
+              76.83787432,10.7717879,0
+              76.83337431999999,10.7717879,0
+              76.83337431999999,10.7672879,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R005C041</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81050852,10.77177944,0
+              76.81500852,10.77177944,0
+              76.81500852,10.77627944,0
+              76.81050852,10.77627944,0
+              76.81050852,10.77177944,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R005C044</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82422801999999,10.77177944,0
+              76.82872802,10.77177944,0
+              76.82872802,10.77627944,0
+              76.82422801999999,10.77627944,0
+              76.82422801999999,10.77177944,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R005C047</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83794746,10.77177944,0
+              76.84244746,10.77177944,0
+              76.84244746,10.77627944,0
+              76.83794746,10.77627944,0
+              76.83794746,10.77177944,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R006C042</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81508166,10.776271,0
+              76.81958166000001,10.776271,0
+              76.81958166000001,10.780771,0
+              76.81508166,10.780771,0
+              76.81508166,10.776271,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R006C043</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81965482,10.776271,0
+              76.82415482,10.776271,0
+              76.82415482,10.780771,0
+              76.81965482,10.780771,0
+              76.81965482,10.776271,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R006C044</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82422801999999,10.776271,0
+              76.82872802,10.776271,0
+              76.82872802,10.780771,0
+              76.82422801999999,10.780771,0
+              76.82422801999999,10.776271,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R007C043</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81965482,10.780762539999998,0
+              76.82415482,10.780762539999998,0
+              76.82415482,10.785262539999998,0
+              76.81965482,10.785262539999998,0
+              76.81965482,10.780762539999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R007C044</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82422801999999,10.780762539999998,0
+              76.82872802,10.780762539999998,0
+              76.82872802,10.785262539999998,0
+              76.82422801999999,10.785262539999998,0
+              76.82422801999999,10.780762539999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R007C045</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82880115999998,10.780762539999998,0
+              76.83330115999999,10.780762539999998,0
+              76.83330115999999,10.785262539999998,0
+              76.82880115999998,10.785262539999998,0
+              76.82880115999998,10.780762539999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R007C047</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83794746,10.780762539999998,0
+              76.84244746,10.780762539999998,0
+              76.84244746,10.785262539999998,0
+              76.83794746,10.785262539999998,0
+              76.83794746,10.780762539999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R007C048</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.84252062,10.780762539999998,0
+              76.84702062000001,10.780762539999998,0
+              76.84702062000001,10.785262539999998,0
+              76.84252062,10.785262539999998,0
+              76.84252062,10.780762539999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R008C023</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72819161999999,10.7852541,0
+              76.73269162,10.7852541,0
+              76.73269162,10.7897541,0
+              76.72819161999999,10.7897541,0
+              76.72819161999999,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R008C026</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74191112,10.7852541,0
+              76.74641112,10.7852541,0
+              76.74641112,10.7897541,0
+              76.74191112,10.7897541,0
+              76.74191112,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R008C030</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.76020376,10.7852541,0
+              76.76470376,10.7852541,0
+              76.76470376,10.7897541,0
+              76.76020376,10.7897541,0
+              76.76020376,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R008C032</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.76935006,10.7852541,0
+              76.77385006,10.7852541,0
+              76.77385006,10.7897541,0
+              76.76935006,10.7897541,0
+              76.76935006,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R008C033</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.77392322,10.7852541,0
+              76.77842322000001,10.7852541,0
+              76.77842322000001,10.7897541,0
+              76.77392322,10.7897541,0
+              76.77392322,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R008C042</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81508166,10.7852541,0
+              76.81958166000001,10.7852541,0
+              76.81958166000001,10.7897541,0
+              76.81508166,10.7897541,0
+              76.81508166,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R008C044</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82422801999999,10.7852541,0
+              76.82872802,10.7852541,0
+              76.82872802,10.7897541,0
+              76.82422801999999,10.7897541,0
+              76.82422801999999,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R008C045</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82880115999998,10.7852541,0
+              76.83330115999999,10.7852541,0
+              76.83330115999999,10.7897541,0
+              76.82880115999998,10.7897541,0
+              76.82880115999998,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R008C047</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83794746,10.7852541,0
+              76.84244746,10.7852541,0
+              76.84244746,10.7897541,0
+              76.83794746,10.7897541,0
+              76.83794746,10.7852541,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R009C024</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73276482,10.78974564,0
+              76.73726482000001,10.78974564,0
+              76.73726482000001,10.79424564,0
+              76.73276482,10.79424564,0
+              76.73276482,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R009C026</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74191112,10.78974564,0
+              76.74641112,10.78974564,0
+              76.74641112,10.79424564,0
+              76.74191112,10.79424564,0
+              76.74191112,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R009C028</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.75105742,10.78974564,0
+              76.75555742,10.78974564,0
+              76.75555742,10.79424564,0
+              76.75105742,10.79424564,0
+              76.75105742,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R009C030</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.76020376,10.78974564,0
+              76.76470376,10.78974564,0
+              76.76470376,10.79424564,0
+              76.76020376,10.79424564,0
+              76.76020376,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R009C031</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.76477692,10.78974564,0
+              76.76927692000001,10.78974564,0
+              76.76927692000001,10.79424564,0
+              76.76477692,10.79424564,0
+              76.76477692,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R009C040</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.80593536,10.78974564,0
+              76.81043536000001,10.78974564,0
+              76.81043536000001,10.79424564,0
+              76.80593536,10.79424564,0
+              76.80593536,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R009C041</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81050852,10.78974564,0
+              76.81500852,10.78974564,0
+              76.81500852,10.79424564,0
+              76.81050852,10.79424564,0
+              76.81050852,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R009C042</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81508166,10.78974564,0
+              76.81958166000001,10.78974564,0
+              76.81958166000001,10.79424564,0
+              76.81508166,10.79424564,0
+              76.81508166,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R009C043</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81965482,10.78974564,0
+              76.82415482,10.78974564,0
+              76.82415482,10.79424564,0
+              76.81965482,10.79424564,0
+              76.81965482,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R009C046</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83337431999999,10.78974564,0
+              76.83787432,10.78974564,0
+              76.83787432,10.79424564,0
+              76.83337431999999,10.79424564,0
+              76.83337431999999,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R009C047</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83794746,10.78974564,0
+              76.84244746,10.78974564,0
+              76.84244746,10.79424564,0
+              76.83794746,10.79424564,0
+              76.83794746,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R009C050</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.85166695999999,10.78974564,0
+              76.85616696,10.78974564,0
+              76.85616696,10.79424564,0
+              76.85166695999999,10.79424564,0
+              76.85166695999999,10.78974564,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R010C024</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73276482,10.794237199999998,0
+              76.73726482000001,10.794237199999998,0
+              76.73726482000001,10.798737199999998,0
+              76.73276482,10.798737199999998,0
+              76.73276482,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R010C026</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74191112,10.794237199999998,0
+              76.74641112,10.794237199999998,0
+              76.74641112,10.798737199999998,0
+              76.74191112,10.798737199999998,0
+              76.74191112,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R010C029</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.75563062,10.794237199999998,0
+              76.76013062000001,10.794237199999998,0
+              76.76013062000001,10.798737199999998,0
+              76.75563062,10.798737199999998,0
+              76.75563062,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R010C030</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.76020376,10.794237199999998,0
+              76.76470376,10.794237199999998,0
+              76.76470376,10.798737199999998,0
+              76.76020376,10.798737199999998,0
+              76.76020376,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R010C031</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.76477692,10.794237199999998,0
+              76.76927692000001,10.794237199999998,0
+              76.76927692000001,10.798737199999998,0
+              76.76477692,10.798737199999998,0
+              76.76477692,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R010C033</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.77392322,10.794237199999998,0
+              76.77842322000001,10.794237199999998,0
+              76.77842322000001,10.798737199999998,0
+              76.77392322,10.798737199999998,0
+              76.77392322,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R010C042</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81508166,10.794237199999998,0
+              76.81958166000001,10.794237199999998,0
+              76.81958166000001,10.798737199999998,0
+              76.81508166,10.798737199999998,0
+              76.81508166,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R010C043</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.81965482,10.794237199999998,0
+              76.82415482,10.794237199999998,0
+              76.82415482,10.798737199999998,0
+              76.81965482,10.798737199999998,0
+              76.81965482,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R010C044</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.82422801999999,10.794237199999998,0
+              76.82872802,10.794237199999998,0
+              76.82872802,10.798737199999998,0
+              76.82422801999999,10.798737199999998,0
+              76.82422801999999,10.794237199999998,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R011C016</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.69617952,10.79872874,0
+              76.70067952000001,10.79872874,0
+              76.70067952000001,10.80322874,0
+              76.69617952,10.80322874,0
+              76.69617952,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R011C021</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.71904531999999,10.79872874,0
+              76.72354532,10.79872874,0
+              76.72354532,10.80322874,0
+              76.71904531999999,10.80322874,0
+              76.71904531999999,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R011C025</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73733795999999,10.79872874,0
+              76.74183796,10.79872874,0
+              76.74183796,10.80322874,0
+              76.73733795999999,10.80322874,0
+              76.73733795999999,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R011C026</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74191112,10.79872874,0
+              76.74641112,10.79872874,0
+              76.74641112,10.80322874,0
+              76.74191112,10.80322874,0
+              76.74191112,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R011C027</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74648425999999,10.79872874,0
+              76.75098426,10.79872874,0
+              76.75098426,10.80322874,0
+              76.74648425999999,10.80322874,0
+              76.74648425999999,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R011C032</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.76935006,10.79872874,0
+              76.77385006,10.79872874,0
+              76.77385006,10.80322874,0
+              76.76935006,10.80322874,0
+              76.76935006,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R011C047</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.83794746,10.79872874,0
+              76.84244746,10.79872874,0
+              76.84244746,10.80322874,0
+              76.83794746,10.80322874,0
+              76.83794746,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R011C048</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.84252062,10.79872874,0
+              76.84702062000001,10.79872874,0
+              76.84702062000001,10.80322874,0
+              76.84252062,10.80322874,0
+              76.84252062,10.79872874,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R012C019</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.70989902,10.80322034,0
+              76.71439902,10.80322034,0
+              76.71439902,10.80772034,0
+              76.70989902,10.80772034,0
+              76.70989902,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R012C020</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.71447215999999,10.80322034,0
+              76.71897215999999,10.80322034,0
+              76.71897215999999,10.80772034,0
+              76.71447215999999,10.80772034,0
+              76.71447215999999,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R012C029</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.75563062,10.80322034,0
+              76.76013062000001,10.80322034,0
+              76.76013062000001,10.80772034,0
+              76.75563062,10.80772034,0
+              76.75563062,10.80322034,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R013C017</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.70075266,10.8077119,0
+              76.70525266000001,10.8077119,0
+              76.70525266000001,10.8122119,0
+              76.70075266,10.8122119,0
+              76.70075266,10.8077119,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R013C018</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.70532582,10.8077119,0
+              76.70982582,10.8077119,0
+              76.70982582,10.8122119,0
+              76.70532582,10.8122119,0
+              76.70532582,10.8077119,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R013C021</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.71904531999999,10.8077119,0
+              76.72354532,10.8077119,0
+              76.72354532,10.8122119,0
+              76.71904531999999,10.8122119,0
+              76.71904531999999,10.8077119,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R013C022</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72361845999998,10.8077119,0
+              76.72811845999999,10.8077119,0
+              76.72811845999999,10.8122119,0
+              76.72361845999998,10.8122119,0
+              76.72361845999998,10.8077119,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R013C025</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73733795999999,10.8077119,0
+              76.74183796,10.8077119,0
+              76.74183796,10.8122119,0
+              76.73733795999999,10.8122119,0
+              76.73733795999999,10.8077119,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R013C026</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 2 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74191112,10.8077119,0
+              76.74641112,10.8077119,0
+              76.74641112,10.8122119,0
+              76.74191112,10.8122119,0
+              76.74191112,10.8077119,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R014C018</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.70532582,10.81220344,0
+              76.70982582,10.81220344,0
+              76.70982582,10.81670344,0
+              76.70532582,10.81670344,0
+              76.70532582,10.81220344,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R014C019</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.70989902,10.81220344,0
+              76.71439902,10.81220344,0
+              76.71439902,10.81670344,0
+              76.70989902,10.81670344,0
+              76.70989902,10.81220344,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R014C020</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.71447215999999,10.81220344,0
+              76.71897215999999,10.81220344,0
+              76.71897215999999,10.81670344,0
+              76.71447215999999,10.81670344,0
+              76.71447215999999,10.81220344,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R014C021</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.71904531999999,10.81220344,0
+              76.72354532,10.81220344,0
+              76.72354532,10.81670344,0
+              76.71904531999999,10.81670344,0
+              76.71904531999999,10.81220344,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R014C022</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72361845999998,10.81220344,0
+              76.72811845999999,10.81220344,0
+              76.72811845999999,10.81670344,0
+              76.72361845999998,10.81670344,0
+              76.72361845999998,10.81220344,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R014C023</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72819161999999,10.81220344,0
+              76.73269162,10.81220344,0
+              76.73269162,10.81670344,0
+              76.72819161999999,10.81670344,0
+              76.72819161999999,10.81220344,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R014C025</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73733795999999,10.81220344,0
+              76.74183796,10.81220344,0
+              76.74183796,10.81670344,0
+              76.73733795999999,10.81670344,0
+              76.73733795999999,10.81220344,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R015C017</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.70075266,10.816695,0
+              76.70525266000001,10.816695,0
+              76.70525266000001,10.821195,0
+              76.70075266,10.821195,0
+              76.70075266,10.816695,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R015C020</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.71447215999999,10.816695,0
+              76.71897215999999,10.816695,0
+              76.71897215999999,10.821195,0
+              76.71447215999999,10.821195,0
+              76.71447215999999,10.816695,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R015C023</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72819161999999,10.816695,0
+              76.73269162,10.816695,0
+              76.73269162,10.821195,0
+              76.72819161999999,10.821195,0
+              76.72819161999999,10.816695,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R015C026</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74191112,10.816695,0
+              76.74641112,10.816695,0
+              76.74641112,10.821195,0
+              76.74191112,10.821195,0
+              76.74191112,10.816695,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R015C027</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.74648425999999,10.816695,0
+              76.75098426,10.816695,0
+              76.75098426,10.821195,0
+              76.74648425999999,10.821195,0
+              76.74648425999999,10.816695,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R016C020</name>
+      <description>TIER 2 HOTSPOT: 7 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.71447215999999,10.82118654,0
+              76.71897215999999,10.82118654,0
+              76.71897215999999,10.82568654,0
+              76.71447215999999,10.82568654,0
+              76.71447215999999,10.82118654,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R016C021</name>
+      <description>TIER 2 HOTSPOT: 5 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.71904531999999,10.82118654,0
+              76.72354532,10.82118654,0
+              76.72354532,10.82568654,0
+              76.71904531999999,10.82568654,0
+              76.71904531999999,10.82118654,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R016C023</name>
+      <description>TIER 2 HOTSPOT: 3 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72819161999999,10.82118654,0
+              76.73269162,10.82118654,0
+              76.73269162,10.82568654,0
+              76.72819161999999,10.82568654,0
+              76.72819161999999,10.82118654,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R017C022</name>
+      <description>TIER 2 HOTSPOT: 6 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.72361845999998,10.8256781,0
+              76.72811845999999,10.8256781,0
+              76.72811845999999,10.8301781,0
+              76.72361845999998,10.8301781,0
+              76.72361845999998,10.8256781,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>T2-R017C024</name>
+      <description>TIER 2 HOTSPOT: 4 visits | 1 trajectories</description>
+      <styleUrl>#tier2Hotspot</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              76.73276482,10.8256781,0
+              76.73726482000001,10.8256781,0
+              76.73726482000001,10.8301781,0
+              76.73276482,10.8301781,0
+              76.73276482,10.8256781,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+  </Folder>
+  
+  <Folder>
+    <name>Camera Locations (Hotspot-Focused)</name>
+    <description>16 cameras placed to maximize coverage of elephant collision zones</description>
+
+    <Placemark>
+      <name>Camera 1: R006C045</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 1/16<br/>
+        <b>Cell:</b> R006C045<br/>
+        <b>Tier 1 Hotspots Covered:</b> 6<br/>
+        <b>Tier 2 Hotspots Covered:</b> 7<br/>
+        <b>Priority Score:</b> 12.5<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.83105115999999,10.778521,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 2: R003C002</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 2/16<br/>
+        <b>Cell:</b> R003C002<br/>
+        <b>Tier 1 Hotspots Covered:</b> 6<br/>
+        <b>Tier 2 Hotspots Covered:</b> 3<br/>
+        <b>Priority Score:</b> 9.0<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.63440526,10.76504634,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 3: R006C048</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 3/16<br/>
+        <b>Cell:</b> R006C048<br/>
+        <b>Tier 1 Hotspots Covered:</b> 6<br/>
+        <b>Tier 2 Hotspots Covered:</b> 3<br/>
+        <b>Priority Score:</b> 9.0<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.84477062,10.778521,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 4: R002C045</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 4/16<br/>
+        <b>Cell:</b> R002C045<br/>
+        <b>Tier 1 Hotspots Covered:</b> 5<br/>
+        <b>Tier 2 Hotspots Covered:</b> 4<br/>
+        <b>Priority Score:</b> 8.9<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.83105115999999,10.76055474,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 5: R001C008</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 5/16<br/>
+        <b>Cell:</b> R001C008<br/>
+        <b>Tier 1 Hotspots Covered:</b> 5<br/>
+        <b>Tier 2 Hotspots Covered:</b> 4<br/>
+        <b>Priority Score:</b> 8.8<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.66184422,10.7560632,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 6: R003C005</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 6/16<br/>
+        <b>Cell:</b> R003C005<br/>
+        <b>Tier 1 Hotspots Covered:</b> 5<br/>
+        <b>Tier 2 Hotspots Covered:</b> 5<br/>
+        <b>Priority Score:</b> 9.5<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.64812472,10.76504634,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 7: R010C047</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 7/16<br/>
+        <b>Cell:</b> R010C047<br/>
+        <b>Tier 1 Hotspots Covered:</b> 1<br/>
+        <b>Tier 2 Hotspots Covered:</b> 5<br/>
+        <b>Priority Score:</b> 5.8<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.84019746,10.796487199999998,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 8: R000C048</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 8/16<br/>
+        <b>Cell:</b> R000C048<br/>
+        <b>Tier 1 Hotspots Covered:</b> 3<br/>
+        <b>Tier 2 Hotspots Covered:</b> 3<br/>
+        <b>Priority Score:</b> 6.0<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.84477062,10.75157164,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 9: R000C005</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 9/16<br/>
+        <b>Cell:</b> R000C005<br/>
+        <b>Tier 1 Hotspots Covered:</b> 4<br/>
+        <b>Tier 2 Hotspots Covered:</b> 5<br/>
+        <b>Priority Score:</b> 8.2<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.64812472,10.75157164,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 10: R000C042</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 10/16<br/>
+        <b>Cell:</b> R000C042<br/>
+        <b>Tier 1 Hotspots Covered:</b> 2<br/>
+        <b>Tier 2 Hotspots Covered:</b> 5<br/>
+        <b>Priority Score:</b> 6.8<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.81733166000001,10.75157164,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 11: R004C042</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 11/16<br/>
+        <b>Cell:</b> R004C042<br/>
+        <b>Tier 1 Hotspots Covered:</b> 2<br/>
+        <b>Tier 2 Hotspots Covered:</b> 6<br/>
+        <b>Priority Score:</b> 5.8<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.81733166000001,10.7695379,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 12: R000C019</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 12/16<br/>
+        <b>Cell:</b> R000C019<br/>
+        <b>Tier 1 Hotspots Covered:</b> 0<br/>
+        <b>Tier 2 Hotspots Covered:</b> 4<br/>
+        <b>Priority Score:</b> 3.9<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.71214902,10.75157164,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 13: R000C002</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 13/16<br/>
+        <b>Cell:</b> R000C002<br/>
+        <b>Tier 1 Hotspots Covered:</b> 5<br/>
+        <b>Tier 2 Hotspots Covered:</b> 4<br/>
+        <b>Priority Score:</b> 6.7<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.63440526,10.75157164,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 14: R000C014</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 14/16<br/>
+        <b>Cell:</b> R000C014<br/>
+        <b>Tier 1 Hotspots Covered:</b> 1<br/>
+        <b>Tier 2 Hotspots Covered:</b> 1<br/>
+        <b>Priority Score:</b> 2.0<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.68928322000001,10.75157164,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 15: R011C025</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 15/16<br/>
+        <b>Cell:</b> R011C025<br/>
+        <b>Tier 1 Hotspots Covered:</b> 7<br/>
+        <b>Tier 2 Hotspots Covered:</b> 6<br/>
+        <b>Priority Score:</b> 2.4<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.73958796,10.80097874,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Camera 16: R012C023</name>
+      <description>
+        <![CDATA[
+        <b>Rank:</b> 16/16<br/>
+        <b>Cell:</b> R012C023<br/>
+        <b>Tier 1 Hotspots Covered:</b> 9<br/>
+        <b>Tier 2 Hotspots Covered:</b> 2<br/>
+        <b>Priority Score:</b> 2.1<br/>
+        <b>Detection:</b> 1km diameter zone
+        ]]>
+      </description>
+      <styleUrl>#cameraIcon</styleUrl>
+      <Point>
+        <coordinates>76.73044162,10.80547034,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 1</name>
+      <description>1km detection radius for Camera 1</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.84005115999999,10.778521,0 76.8399144297771,10.780083833599003,0 76.83950839358705,10.78159918128993,0 76.83884538863404,10.783021,0 76.83794555998806,10.78430608848718,0 76.83683624848716,10.78541539998807,0 76.83555115999998,10.78631522863406,0 76.83412934128992,10.786978233587073,0 76.83261399359898,10.78738426977711,0 76.83105115999999,10.787521,0 76.82948832640099,10.78738426977711,0 76.82797297871005,10.786978233587073,0 76.82655116,10.78631522863406,0 76.82526607151281,10.78541539998807,0 76.82415676001192,10.78430608848718,0 76.82325693136593,10.783021,0 76.82259392641292,10.78159918128993,0 76.82218789022288,10.780083833599003,0 76.82205115999999,10.778521,0 76.82218789022288,10.776958166400997,0 76.82259392641292,10.775442818710069,0 76.82325693136593,10.774021,0 76.82415676001192,10.77273591151282,0 76.82526607151281,10.77162660001193,0 76.82655116,10.77072677136594,0 76.82797297871005,10.770063766412926,0 76.82948832640099,10.769657730222889,0 76.83105115999999,10.769521,0 76.83261399359898,10.769657730222889,0 76.83412934128992,10.770063766412926,0 76.83555115999998,10.77072677136594,0 76.83683624848716,10.77162660001193,0 76.83794555998806,10.77273591151282,0 76.83884538863404,10.774021,0 76.83950839358705,10.775442818710069,0 76.8399144297771,10.776958166400997,0 76.84005115999999,10.778521,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 2</name>
+      <description>1km detection radius for Camera 2</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.64340526,10.76504634,0 76.6432685297771,10.766609173599003,0 76.64286249358706,10.76812452128993,0 76.64219948863405,10.76954634,0 76.64129965998806,10.77083142848718,0 76.64019034848717,10.77194073998807,0 76.63890525999999,10.77284056863406,0 76.63748344128993,10.773503573587073,0 76.63596809359899,10.77390960977711,0 76.63440526,10.77404634,0 76.632842426401,10.77390960977711,0 76.63132707871006,10.773503573587073,0 76.62990526,10.77284056863406,0 76.62862017151282,10.77194073998807,0 76.62751086001192,10.77083142848718,0 76.62661103136594,10.76954634,0 76.62594802641293,10.76812452128993,0 76.62554199022289,10.766609173599003,0 76.62540526,10.76504634,0 76.62554199022289,10.763483506400997,0 76.62594802641293,10.761968158710069,0 76.62661103136594,10.76054634,0 76.62751086001192,10.75926125151282,0 76.62862017151282,10.75815194001193,0 76.62990526,10.75725211136594,0 76.63132707871006,10.756589106412926,0 76.632842426401,10.756183070222889,0 76.63440526,10.75604634,0 76.63596809359899,10.756183070222889,0 76.63748344128993,10.756589106412926,0 76.63890525999999,10.75725211136594,0 76.64019034848717,10.75815194001193,0 76.64129965998806,10.75926125151282,0 76.64219948863405,10.76054634,0 76.64286249358706,10.761968158710069,0 76.6432685297771,10.763483506400997,0 76.64340526,10.76504634,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 3</name>
+      <description>1km detection radius for Camera 3</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.85377062,10.778521,0 76.85363388977711,10.780083833599003,0 76.85322785358707,10.78159918128993,0 76.85256484863406,10.783021,0 76.85166501998808,10.78430608848718,0 76.85055570848718,10.78541539998807,0 76.84927062,10.78631522863406,0 76.84784880128994,10.786978233587073,0 76.846333453599,10.78738426977711,0 76.84477062,10.787521,0 76.84320778640101,10.78738426977711,0 76.84169243871007,10.786978233587073,0 76.84027062000001,10.78631522863406,0 76.83898553151283,10.78541539998807,0 76.83787622001194,10.78430608848718,0 76.83697639136595,10.783021,0 76.83631338641294,10.78159918128993,0 76.8359073502229,10.780083833599003,0 76.83577062,10.778521,0 76.8359073502229,10.776958166400997,0 76.83631338641294,10.775442818710069,0 76.83697639136595,10.774021,0 76.83787622001194,10.77273591151282,0 76.83898553151283,10.77162660001193,0 76.84027062000001,10.77072677136594,0 76.84169243871007,10.770063766412926,0 76.84320778640101,10.769657730222889,0 76.84477062,10.769521,0 76.846333453599,10.769657730222889,0 76.84784880128994,10.770063766412926,0 76.84927062,10.77072677136594,0 76.85055570848718,10.77162660001193,0 76.85166501998808,10.77273591151282,0 76.85256484863406,10.774021,0 76.85322785358707,10.775442818710069,0 76.85363388977711,10.776958166400997,0 76.85377062,10.778521,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 4</name>
+      <description>1km detection radius for Camera 4</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.84005115999999,10.76055474,0 76.8399144297771,10.762117573599003,0 76.83950839358705,10.76363292128993,0 76.83884538863404,10.76505474,0 76.83794555998806,10.76633982848718,0 76.83683624848716,10.76744913998807,0 76.83555115999998,10.76834896863406,0 76.83412934128992,10.769011973587073,0 76.83261399359898,10.76941800977711,0 76.83105115999999,10.76955474,0 76.82948832640099,10.76941800977711,0 76.82797297871005,10.769011973587073,0 76.82655116,10.76834896863406,0 76.82526607151281,10.76744913998807,0 76.82415676001192,10.76633982848718,0 76.82325693136593,10.76505474,0 76.82259392641292,10.76363292128993,0 76.82218789022288,10.762117573599003,0 76.82205115999999,10.76055474,0 76.82218789022288,10.758991906400997,0 76.82259392641292,10.757476558710069,0 76.82325693136593,10.75605474,0 76.82415676001192,10.75476965151282,0 76.82526607151281,10.75366034001193,0 76.82655116,10.75276051136594,0 76.82797297871005,10.752097506412927,0 76.82948832640099,10.75169147022289,0 76.83105115999999,10.75155474,0 76.83261399359898,10.75169147022289,0 76.83412934128992,10.752097506412927,0 76.83555115999998,10.75276051136594,0 76.83683624848716,10.75366034001193,0 76.83794555998806,10.75476965151282,0 76.83884538863404,10.75605474,0 76.83950839358705,10.757476558710069,0 76.8399144297771,10.758991906400997,0 76.84005115999999,10.76055474,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 5</name>
+      <description>1km detection radius for Camera 5</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.67084422,10.7560632,0 76.67070748977712,10.757626033599003,0 76.67030145358707,10.75914138128993,0 76.66963844863406,10.7605632,0 76.66873861998808,10.76184828848718,0 76.66762930848718,10.76295759998807,0 76.66634422,10.76385742863406,0 76.66492240128994,10.764520433587073,0 76.663407053599,10.76492646977711,0 76.66184422,10.7650632,0 76.66028138640101,10.76492646977711,0 76.65876603871007,10.764520433587073,0 76.65734422000001,10.76385742863406,0 76.65605913151283,10.76295759998807,0 76.65494982001194,10.76184828848718,0 76.65404999136595,10.7605632,0 76.65338698641294,10.75914138128993,0 76.6529809502229,10.757626033599003,0 76.65284422,10.7560632,0 76.6529809502229,10.754500366400997,0 76.65338698641294,10.752985018710069,0 76.65404999136595,10.7515632,0 76.65494982001194,10.75027811151282,0 76.65605913151283,10.74916880001193,0 76.65734422000001,10.74826897136594,0 76.65876603871007,10.747605966412927,0 76.66028138640101,10.747199930222889,0 76.66184422,10.7470632,0 76.663407053599,10.747199930222889,0 76.66492240128994,10.747605966412927,0 76.66634422,10.74826897136594,0 76.66762930848718,10.74916880001193,0 76.66873861998808,10.75027811151282,0 76.66963844863406,10.7515632,0 76.67030145358707,10.752985018710069,0 76.67070748977712,10.754500366400997,0 76.67084422,10.7560632,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 6</name>
+      <description>1km detection radius for Camera 6</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.65712472,10.76504634,0 76.65698798977711,10.766609173599003,0 76.65658195358706,10.76812452128993,0 76.65591894863405,10.76954634,0 76.65501911998807,10.77083142848718,0 76.65390980848717,10.77194073998807,0 76.65262471999999,10.77284056863406,0 76.65120290128993,10.773503573587073,0 76.649687553599,10.77390960977711,0 76.64812472,10.77404634,0 76.646561886401,10.77390960977711,0 76.64504653871006,10.773503573587073,0 76.64362472,10.77284056863406,0 76.64233963151283,10.77194073998807,0 76.64123032001193,10.77083142848718,0 76.64033049136594,10.76954634,0 76.63966748641293,10.76812452128993,0 76.63926145022289,10.766609173599003,0 76.63912472,10.76504634,0 76.63926145022289,10.763483506400997,0 76.63966748641293,10.761968158710069,0 76.64033049136594,10.76054634,0 76.64123032001193,10.75926125151282,0 76.64233963151283,10.75815194001193,0 76.64362472,10.75725211136594,0 76.64504653871006,10.756589106412926,0 76.646561886401,10.756183070222889,0 76.64812472,10.75604634,0 76.649687553599,10.756183070222889,0 76.65120290128993,10.756589106412926,0 76.65262471999999,10.75725211136594,0 76.65390980848717,10.75815194001193,0 76.65501911998807,10.75926125151282,0 76.65591894863405,10.76054634,0 76.65658195358706,10.761968158710069,0 76.65698798977711,10.763483506400997,0 76.65712472,10.76504634,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 7</name>
+      <description>1km detection radius for Camera 7</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.84919746,10.796487199999998,0 76.84906072977711,10.798050033599,0 76.84865469358706,10.799565381289929,0 76.84799168863405,10.800987199999998,0 76.84709185998807,10.802272288487178,0 76.84598254848717,10.803381599988068,0 76.84469745999999,10.804281428634058,0 76.84327564128994,10.804944433587071,0 76.841760293599,10.805350469777109,0 76.84019746,10.805487199999998,0 76.838634626401,10.805350469777109,0 76.83711927871006,10.804944433587071,0 76.83569746,10.804281428634058,0 76.83441237151283,10.803381599988068,0 76.83330306001193,10.802272288487178,0 76.83240323136594,10.800987199999998,0 76.83174022641293,10.799565381289929,0 76.83133419022289,10.798050033599,0 76.83119746,10.796487199999998,0 76.83133419022289,10.794924366400995,0 76.83174022641293,10.793409018710067,0 76.83240323136594,10.791987199999998,0 76.83330306001193,10.790702111512818,0 76.83441237151283,10.789592800011928,0 76.83569746,10.788692971365938,0 76.83711927871006,10.788029966412925,0 76.838634626401,10.787623930222887,0 76.84019746,10.787487199999998,0 76.841760293599,10.787623930222887,0 76.84327564128994,10.788029966412925,0 76.84469745999999,10.788692971365938,0 76.84598254848717,10.789592800011928,0 76.84709185998807,10.790702111512818,0 76.84799168863405,10.791987199999998,0 76.84865469358706,10.793409018710067,0 76.84906072977711,10.794924366400995,0 76.84919746,10.796487199999998,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 8</name>
+      <description>1km detection radius for Camera 8</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.85377062,10.75157164,0 76.85363388977711,10.753134473599003,0 76.85322785358707,10.75464982128993,0 76.85256484863406,10.75607164,0 76.85166501998808,10.75735672848718,0 76.85055570848718,10.75846603998807,0 76.84927062,10.75936586863406,0 76.84784880128994,10.760028873587073,0 76.846333453599,10.76043490977711,0 76.84477062,10.76057164,0 76.84320778640101,10.76043490977711,0 76.84169243871007,10.760028873587073,0 76.84027062000001,10.75936586863406,0 76.83898553151283,10.75846603998807,0 76.83787622001194,10.75735672848718,0 76.83697639136595,10.75607164,0 76.83631338641294,10.75464982128993,0 76.8359073502229,10.753134473599003,0 76.83577062,10.75157164,0 76.8359073502229,10.750008806400997,0 76.83631338641294,10.748493458710069,0 76.83697639136595,10.74707164,0 76.83787622001194,10.74578655151282,0 76.83898553151283,10.74467724001193,0 76.84027062000001,10.74377741136594,0 76.84169243871007,10.743114406412927,0 76.84320778640101,10.74270837022289,0 76.84477062,10.74257164,0 76.846333453599,10.74270837022289,0 76.84784880128994,10.743114406412927,0 76.84927062,10.74377741136594,0 76.85055570848718,10.74467724001193,0 76.85166501998808,10.74578655151282,0 76.85256484863406,10.74707164,0 76.85322785358707,10.748493458710069,0 76.85363388977711,10.750008806400997,0 76.85377062,10.75157164,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 9</name>
+      <description>1km detection radius for Camera 9</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.65712472,10.75157164,0 76.65698798977711,10.753134473599003,0 76.65658195358706,10.75464982128993,0 76.65591894863405,10.75607164,0 76.65501911998807,10.75735672848718,0 76.65390980848717,10.75846603998807,0 76.65262471999999,10.75936586863406,0 76.65120290128993,10.760028873587073,0 76.649687553599,10.76043490977711,0 76.64812472,10.76057164,0 76.646561886401,10.76043490977711,0 76.64504653871006,10.760028873587073,0 76.64362472,10.75936586863406,0 76.64233963151283,10.75846603998807,0 76.64123032001193,10.75735672848718,0 76.64033049136594,10.75607164,0 76.63966748641293,10.75464982128993,0 76.63926145022289,10.753134473599003,0 76.63912472,10.75157164,0 76.63926145022289,10.750008806400997,0 76.63966748641293,10.748493458710069,0 76.64033049136594,10.74707164,0 76.64123032001193,10.74578655151282,0 76.64233963151283,10.74467724001193,0 76.64362472,10.74377741136594,0 76.64504653871006,10.743114406412927,0 76.646561886401,10.74270837022289,0 76.64812472,10.74257164,0 76.649687553599,10.74270837022289,0 76.65120290128993,10.743114406412927,0 76.65262471999999,10.74377741136594,0 76.65390980848717,10.74467724001193,0 76.65501911998807,10.74578655151282,0 76.65591894863405,10.74707164,0 76.65658195358706,10.748493458710069,0 76.65698798977711,10.750008806400997,0 76.65712472,10.75157164,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 10</name>
+      <description>1km detection radius for Camera 10</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.82633166000001,10.75157164,0 76.82619492977712,10.753134473599003,0 76.82578889358707,10.75464982128993,0 76.82512588863406,10.75607164,0 76.82422605998808,10.75735672848718,0 76.82311674848718,10.75846603998807,0 76.82183166,10.75936586863406,0 76.82040984128994,10.760028873587073,0 76.818894493599,10.76043490977711,0 76.81733166000001,10.76057164,0 76.81576882640101,10.76043490977711,0 76.81425347871007,10.760028873587073,0 76.81283166000001,10.75936586863406,0 76.81154657151284,10.75846603998807,0 76.81043726001194,10.75735672848718,0 76.80953743136595,10.75607164,0 76.80887442641294,10.75464982128993,0 76.8084683902229,10.753134473599003,0 76.80833166000001,10.75157164,0 76.8084683902229,10.750008806400997,0 76.80887442641294,10.748493458710069,0 76.80953743136595,10.74707164,0 76.81043726001194,10.74578655151282,0 76.81154657151284,10.74467724001193,0 76.81283166000001,10.74377741136594,0 76.81425347871007,10.743114406412927,0 76.81576882640101,10.74270837022289,0 76.81733166000001,10.74257164,0 76.818894493599,10.74270837022289,0 76.82040984128994,10.743114406412927,0 76.82183166,10.74377741136594,0 76.82311674848718,10.74467724001193,0 76.82422605998808,10.74578655151282,0 76.82512588863406,10.74707164,0 76.82578889358707,10.748493458710069,0 76.82619492977712,10.750008806400997,0 76.82633166000001,10.75157164,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 11</name>
+      <description>1km detection radius for Camera 11</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.82633166000001,10.7695379,0 76.82619492977712,10.771100733599003,0 76.82578889358707,10.77261608128993,0 76.82512588863406,10.7740379,0 76.82422605998808,10.77532298848718,0 76.82311674848718,10.77643229998807,0 76.82183166,10.77733212863406,0 76.82040984128994,10.777995133587073,0 76.818894493599,10.77840116977711,0 76.81733166000001,10.7785379,0 76.81576882640101,10.77840116977711,0 76.81425347871007,10.777995133587073,0 76.81283166000001,10.77733212863406,0 76.81154657151284,10.77643229998807,0 76.81043726001194,10.77532298848718,0 76.80953743136595,10.7740379,0 76.80887442641294,10.77261608128993,0 76.8084683902229,10.771100733599003,0 76.80833166000001,10.7695379,0 76.8084683902229,10.767975066400997,0 76.80887442641294,10.766459718710069,0 76.80953743136595,10.7650379,0 76.81043726001194,10.76375281151282,0 76.81154657151284,10.76264350001193,0 76.81283166000001,10.76174367136594,0 76.81425347871007,10.761080666412926,0 76.81576882640101,10.760674630222889,0 76.81733166000001,10.7605379,0 76.818894493599,10.760674630222889,0 76.82040984128994,10.761080666412926,0 76.82183166,10.76174367136594,0 76.82311674848718,10.76264350001193,0 76.82422605998808,10.76375281151282,0 76.82512588863406,10.7650379,0 76.82578889358707,10.766459718710069,0 76.82619492977712,10.767975066400997,0 76.82633166000001,10.7695379,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 12</name>
+      <description>1km detection radius for Camera 12</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.72114902,10.75157164,0 76.72101228977711,10.753134473599003,0 76.72060625358706,10.75464982128993,0 76.71994324863405,10.75607164,0 76.71904341998807,10.75735672848718,0 76.71793410848717,10.75846603998807,0 76.71664901999999,10.75936586863406,0 76.71522720128993,10.760028873587073,0 76.713711853599,10.76043490977711,0 76.71214902,10.76057164,0 76.710586186401,10.76043490977711,0 76.70907083871006,10.760028873587073,0 76.70764902,10.75936586863406,0 76.70636393151283,10.75846603998807,0 76.70525462001193,10.75735672848718,0 76.70435479136594,10.75607164,0 76.70369178641293,10.75464982128993,0 76.70328575022289,10.753134473599003,0 76.70314902,10.75157164,0 76.70328575022289,10.750008806400997,0 76.70369178641293,10.748493458710069,0 76.70435479136594,10.74707164,0 76.70525462001193,10.74578655151282,0 76.70636393151283,10.74467724001193,0 76.70764902,10.74377741136594,0 76.70907083871006,10.743114406412927,0 76.710586186401,10.74270837022289,0 76.71214902,10.74257164,0 76.713711853599,10.74270837022289,0 76.71522720128993,10.743114406412927,0 76.71664901999999,10.74377741136594,0 76.71793410848717,10.74467724001193,0 76.71904341998807,10.74578655151282,0 76.71994324863405,10.74707164,0 76.72060625358706,10.748493458710069,0 76.72101228977711,10.750008806400997,0 76.72114902,10.75157164,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 13</name>
+      <description>1km detection radius for Camera 13</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.64340526,10.75157164,0 76.6432685297771,10.753134473599003,0 76.64286249358706,10.75464982128993,0 76.64219948863405,10.75607164,0 76.64129965998806,10.75735672848718,0 76.64019034848717,10.75846603998807,0 76.63890525999999,10.75936586863406,0 76.63748344128993,10.760028873587073,0 76.63596809359899,10.76043490977711,0 76.63440526,10.76057164,0 76.632842426401,10.76043490977711,0 76.63132707871006,10.760028873587073,0 76.62990526,10.75936586863406,0 76.62862017151282,10.75846603998807,0 76.62751086001192,10.75735672848718,0 76.62661103136594,10.75607164,0 76.62594802641293,10.75464982128993,0 76.62554199022289,10.753134473599003,0 76.62540526,10.75157164,0 76.62554199022289,10.750008806400997,0 76.62594802641293,10.748493458710069,0 76.62661103136594,10.74707164,0 76.62751086001192,10.74578655151282,0 76.62862017151282,10.74467724001193,0 76.62990526,10.74377741136594,0 76.63132707871006,10.743114406412927,0 76.632842426401,10.74270837022289,0 76.63440526,10.74257164,0 76.63596809359899,10.74270837022289,0 76.63748344128993,10.743114406412927,0 76.63890525999999,10.74377741136594,0 76.64019034848717,10.74467724001193,0 76.64129965998806,10.74578655151282,0 76.64219948863405,10.74707164,0 76.64286249358706,10.748493458710069,0 76.6432685297771,10.750008806400997,0 76.64340526,10.75157164,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 14</name>
+      <description>1km detection radius for Camera 14</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.69828322000001,10.75157164,0 76.69814648977712,10.753134473599003,0 76.69774045358707,10.75464982128993,0 76.69707744863406,10.75607164,0 76.69617761998808,10.75735672848718,0 76.69506830848718,10.75846603998807,0 76.69378322,10.75936586863406,0 76.69236140128994,10.760028873587073,0 76.690846053599,10.76043490977711,0 76.68928322000001,10.76057164,0 76.68772038640101,10.76043490977711,0 76.68620503871007,10.760028873587073,0 76.68478322000001,10.75936586863406,0 76.68349813151283,10.75846603998807,0 76.68238882001194,10.75735672848718,0 76.68148899136595,10.75607164,0 76.68082598641294,10.75464982128993,0 76.6804199502229,10.753134473599003,0 76.68028322,10.75157164,0 76.6804199502229,10.750008806400997,0 76.68082598641294,10.748493458710069,0 76.68148899136595,10.74707164,0 76.68238882001194,10.74578655151282,0 76.68349813151283,10.74467724001193,0 76.68478322000001,10.74377741136594,0 76.68620503871007,10.743114406412927,0 76.68772038640101,10.74270837022289,0 76.68928322000001,10.74257164,0 76.690846053599,10.74270837022289,0 76.69236140128994,10.743114406412927,0 76.69378322,10.74377741136594,0 76.69506830848718,10.74467724001193,0 76.69617761998808,10.74578655151282,0 76.69707744863406,10.74707164,0 76.69774045358707,10.748493458710069,0 76.69814648977712,10.750008806400997,0 76.69828322000001,10.75157164,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 15</name>
+      <description>1km detection radius for Camera 15</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.74858796,10.80097874,0 76.7484512297771,10.802541573599003,0 76.74804519358706,10.80405692128993,0 76.74738218863405,10.80547874,0 76.74648235998806,10.80676382848718,0 76.74537304848717,10.80787313998807,0 76.74408795999999,10.80877296863406,0 76.74266614128993,10.809435973587073,0 76.74115079359899,10.80984200977711,0 76.73958796,10.80997874,0 76.738025126401,10.80984200977711,0 76.73650977871006,10.809435973587073,0 76.73508796,10.80877296863406,0 76.73380287151282,10.80787313998807,0 76.73269356001192,10.80676382848718,0 76.73179373136594,10.80547874,0 76.73113072641293,10.80405692128993,0 76.73072469022289,10.802541573599003,0 76.73058796,10.80097874,0 76.73072469022289,10.799415906400997,0 76.73113072641293,10.797900558710069,0 76.73179373136594,10.79647874,0 76.73269356001192,10.79519365151282,0 76.73380287151282,10.79408434001193,0 76.73508796,10.79318451136594,0 76.73650977871006,10.792521506412927,0 76.738025126401,10.792115470222889,0 76.73958796,10.79197874,0 76.74115079359899,10.792115470222889,0 76.74266614128993,10.792521506412927,0 76.74408795999999,10.79318451136594,0 76.74537304848717,10.79408434001193,0 76.74648235998806,10.79519365151282,0 76.74738218863405,10.79647874,0 76.74804519358706,10.797900558710069,0 76.7484512297771,10.799415906400997,0 76.74858796,10.80097874,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Zone 16</name>
+      <description>1km detection radius for Camera 16</description>
+      <styleUrl>#detectionZone</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>76.73944162,10.80547034,0 76.7393048897771,10.807033173599002,0 76.73889885358706,10.80854852128993,0 76.73823584863405,10.80997034,0 76.73733601998806,10.81125542848718,0 76.73622670848717,10.81236473998807,0 76.73494161999999,10.81326456863406,0 76.73351980128993,10.813927573587073,0 76.73200445359899,10.81433360977711,0 76.73044162,10.81447034,0 76.728878786401,10.81433360977711,0 76.72736343871006,10.813927573587073,0 76.72594162,10.81326456863406,0 76.72465653151282,10.81236473998807,0 76.72354722001192,10.81125542848718,0 76.72264739136594,10.80997034,0 76.72198438641293,10.80854852128993,0 76.72157835022288,10.807033173599002,0 76.72144162,10.80547034,0 76.72157835022288,10.803907506400996,0 76.72198438641293,10.802392158710068,0 76.72264739136594,10.80097034,0 76.72354722001192,10.79968525151282,0 76.72465653151282,10.79857594001193,0 76.72594162,10.79767611136594,0 76.72736343871006,10.797013106412926,0 76.728878786401,10.796607070222889,0 76.73044162,10.796470339999999,0 76.73200445359899,10.796607070222889,0 76.73351980128993,10.797013106412926,0 76.73494161999999,10.79767611136594,0 76.73622670848717,10.79857594001193,0 76.73733601998806,10.79968525151282,0 76.73823584863405,10.80097034,0 76.73889885358706,10.802392158710068,0 76.7393048897771,10.803907506400996,0 76.73944162,10.80547034,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+  </Folder>
+</Document>
+</kml>

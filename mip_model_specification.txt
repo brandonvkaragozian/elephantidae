@@ -1,0 +1,42 @@
+MIXED INTEGER PROGRAM FOR CAMERA PLACEMENT
+================================================================================
+
+PROBLEM FORMULATION
+--------------------------------------------------------------------------------
+Decision Variables:
+  x[j] ∈ {0,1}  : Camera placed at location j
+  y[i] ∈ [0,1]  : Coverage level of cell i
+
+Objective Function:
+  maximize: Σ_i (demand[i] * y[i])
+
+Constraints:
+  1. Budget: Σ_j x[j] ≤ 16
+  2. Coverage: y[i] ≤ Σ_j detectability[i,j] * x[j]  ∀i
+
+COMPONENTS
+--------------------------------------------------------------------------------
+Demand (Importance):
+  Definition: Weighted combination of elephant activity metrics
+  Components: 50% visit count + 30% trajectory diversity + 20% entry points
+  Range: [0, 1] normalized
+  Mean: 0.093
+  High-demand cells (>0.8): 6
+
+Detectability (Visibility):
+  Definition: Probability camera at j can detect elephants at i
+  Formula: 1 - occlusion_factor(j → i)
+  Occlusion: Line-of-sight interpolation
+    Forest: 80% blocking
+    Water: 90% blocking
+    Settlements: 70% blocking
+    Crops: 30% blocking
+  Binary threshold: >0.3 (>30% clear line-of-sight)
+  Range: [0, 1] continuous, [0,1] binary
+
+SOLVER
+--------------------------------------------------------------------------------
+Algorithm: Branch-and-cut (CBC solver)
+Time limit: 120 seconds
+Status: Optimal
+Objective: 99.618
